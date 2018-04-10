@@ -1,2 +1,2 @@
 # pifighter2
-New Pifighter
+New Pifighter - based on the original. 
