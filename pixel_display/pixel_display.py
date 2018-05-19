@@ -40,6 +40,10 @@ class PixelDisplay:
     def welcome_message(self, name):
         self.text_display.display_text(" WELCOME Adversary {} to PI-FIGHTER ".format(name))
 
+    # Display a welcome message
+    def text_message(self, display_str):
+        self.text_display.display_text(display_str)
+
     # Set up player health
     def set_up_player_health(self, pixel_height):
         global BarIndicator
@@ -93,3 +97,5 @@ if __name__ == "__main__":
         Display.set_opponent_attack(random.randrange(0,101))
 
         time.sleep(0.05)
+
+    Display.text_message("Leaving Pi Fighter - great job {} ".format("Ricardo"))

@@ -29,8 +29,7 @@ class TextDisplay:
 
         curr_rotation = unicornhathd.get_rotation()
 
-        print(curr_rotation)
-
+        # Adjusting rotation - will turn it back after the displaying the text.
         unicornhathd.rotation (curr_rotation - 180)
 
         # Use `fc-list` to show a list of installed fonts on your system,
