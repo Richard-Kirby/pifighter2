@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from bar_indicator import BarIndicator
 from text_handler import TextDisplay
@@ -26,15 +26,7 @@ class PixelDisplay:
         unicornhathd.show()
         unicornhathd.rotation(-90)
         unicornhathd.brightness(.75)
-        #unicornhathd.set_pixel(0,0,255,0,0)
-        #unicornhathd.set_pixel(1,0,255,0,0)
-        #unicornhathd.set_pixel(15,15,0,0,255)
-        #unicornhathd.set_pixel(15,14,0,255,0)
-
         unicornhathd.show()
-        #time.sleep(10)
-
-
 
     # Display a welcome message
     def welcome_message(self, name):
@@ -46,13 +38,13 @@ class PixelDisplay:
 
     # Set up player health
     def set_up_player_health(self, pixel_height):
-        global BarIndicator
+        #global BarIndicator
 
         self.player_health_bar = BarIndicator(2, pixel_height, 0, 0, numpy.arange(0, .33, .33 / 16))
 
     # Set up opponent health
     def set_up_opponent_health(self, pixel_height):
-        global BarIndicator
+        #global BarIndicator
 
         self.opponent_health_bar = BarIndicator(2, 16, 14, 0, numpy.arange(.93, .60, -.33 / 16))
 
@@ -76,6 +68,44 @@ class PixelDisplay:
         self.opponent_attack_bar.display_percent(percentage)
         unicornhathd.show()
 
+    # Display a quadrant for the attack
+    # quadrant 1 = Left Kick, 2 = Left Punch, 3 = Right Kick, 4 = Right Punch
+    def workout_attack(self, quadrant):
+
+        # x and y lengths of the pixels to display
+        x_len = 2
+        y_len = 5
+
+        # Translate the quadrant to pixel start locations and
+        # colours.  Use Red for Right (Hue =1), Green (Hue =0.33) for Left.
+        if (quadrant == 1):
+            x_start = 0
+            y_start = 0
+            quadrant_colour=0.33
+        elif (quadrant == 2):
+            x_start = 0
+            y_start = 11
+            quadrant_colour=0.33
+        elif (quadrant ==3):
+            x_start = 14
+            y_start = 11
+            quadrant_colour=1
+        elif (quadrant ==4):
+            x_start = 14
+            y_start = 0
+            quadrant_colour=1
+
+        # Raise exception of quadrant doesn't make sense.
+        else:
+            raise()
+
+        # Set the pixels and then display.
+        for i in range (x_len):
+            for j in range (y_len):
+                unicornhathd.set_pixel_hsv(x_start+i, y_start+ j, quadrant_colour)
+
+        unicornhathd.show()
+
 
 
 if __name__ == "__main__":
@@ -86,6 +116,8 @@ if __name__ == "__main__":
     Display = PixelDisplay()
     Display.set_up_player_health(10)
     Display.set_up_opponent_health(16)
+
+
 
     Display.welcome_message("Ricardo")
 
@@ -98,4 +130,24 @@ if __name__ == "__main__":
 
         time.sleep(0.05)
 
-    Display.text_message("Leaving Pi Fighter - great job {} ".format("Ricardo"))
+    Display.text_message("Bye{} ".format("Ricardo"))
+
+    print("Left kick")
+    Display.workout_attack(1)
+
+    time.sleep(2)
+
+    print("Left punch")
+    Display.workout_attack(2)
+
+    time.sleep(2)
+
+    print("right kick")
+    Display.workout_attack(3)
+
+    time.sleep(2)
+
+    print("right punch")
+    Display.workout_attack(4)
+
+    Display.set_player_attack(101)

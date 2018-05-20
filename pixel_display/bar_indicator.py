@@ -46,3 +46,4 @@ class BarIndicator:
 
                 else:
                     unicornhathd.set_pixel(self.x_loc + i, self.y_loc + j, self.back_colour[0],self.back_colour[1], self.back_colour[2])
+
