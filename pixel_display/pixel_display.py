@@ -70,7 +70,8 @@ class PixelDisplay:
 
     # Display a quadrant for the attack
     # quadrant 1 = Left Kick, 2 = Left Punch, 3 = Right Kick, 4 = Right Punch
-    def workout_attack(self, quadrant):
+    # colour = -1 means to use default
+    def workout_attack(self, quadrant, colour = -1):
 
         # x and y lengths of the pixels to display
         x_len = 2
@@ -81,19 +82,35 @@ class PixelDisplay:
         if (quadrant == 1):
             x_start = 0
             y_start = 0
-            quadrant_colour=0.33
+
+            if colour == -1:
+                quadrant_colour=0.33
+            else:
+                quadrant_colour = colour
+
         elif (quadrant == 2):
             x_start = 0
             y_start = 11
-            quadrant_colour=0.33
+            if colour == -1:
+                quadrant_colour=0.33
+            else:
+                quadrant_colour=0.33
+
         elif (quadrant ==3):
             x_start = 14
             y_start = 11
-            quadrant_colour=1
+            if colour == -1:
+                quadrant_colour=0.33
+            else:
+                quadrant_colour=1
         elif (quadrant ==4):
             x_start = 14
             y_start = 0
-            quadrant_colour=1
+
+            if colour == -1:
+                quadrant_colour=0.33
+            else:
+                quadrant_colour=1
 
         # Raise exception of quadrant doesn't make sense.
         else:
