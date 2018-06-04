@@ -13,7 +13,7 @@ class Event:
         end_time = time.time()
         print("finish", end_time)
 
-
+# Workout class - handles workouts where the attack is specified by pifighter.
 class Workout(Event):
 
     def __init__(self):
@@ -23,7 +23,7 @@ class Workout(Event):
     def init_workout(self):
         print("Init workout")
 
-
+# Fight class - manages a fight between the player and an opponent.
 class Fight(Event):
 
     player = ""
@@ -36,6 +36,8 @@ class Fight(Event):
 
         print("{} v {}" .format(self.player, self.opponent))
 
+
+# Session class manages a session where the player does workouts and fights as desired.
 class Session(Event):
 
     player = ""
@@ -47,12 +49,14 @@ class Session(Event):
         self.player = session_player
         print(self.player)
 
+    # Set up workout for the player.
     def setup_workout(self):
         self.workout = Workout()
         self.workout.init_workout()
         print("workout happening")
         self.workout.finish_event()
 
+    # Set you a fight for he player.  
     def setup_fight(self, opponent):
         self.fight = Fight(self.player, opponent)
 
