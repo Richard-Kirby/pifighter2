@@ -56,9 +56,12 @@ class Session(Event):
         print("workout happening")
         self.workout.finish_event()
 
-    # Set you a fight for he player.  
+    # Set you a fight for he player.
     def setup_fight(self, opponent):
         self.fight = Fight(self.player, opponent)
+
+    def close_session(self):
+        print("Session Closing")
 
 if __name__ == "__main__":
 
