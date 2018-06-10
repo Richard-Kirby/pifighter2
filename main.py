@@ -27,8 +27,6 @@ class Application(tk.Frame):
                                      font=("Starjhol.ttf", 20, "bold"))
         self.player_label.pack(side="top")
         self.pack()
-        self.session = session_mgr.Session(self.player.get())
-
 
         # Create the list of possible players
         self.player_list = tk.Listbox(self, font=pi_fighter_font, width=pi_fighter_width, selectmode=tk.SINGLE,

@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 
-from bar_indicator import BarIndicator
-from text_handler import TextDisplay
 import numpy
-
+from pixel_display.bar_indicator import BarIndicator
+from pixel_display.text_handler import TextDisplay
 import unicornhathd
+
 
 # Class to manage the pixel display - covers player health, opponent health, player attacks, opponent attacks.
 # Also Text displays.
-
 class PixelDisplay:
 
     # Set up Attack indication bars.
