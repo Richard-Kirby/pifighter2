@@ -4,6 +4,7 @@ import numpy
 from pixel_display.bar_indicator import BarIndicator
 from pixel_display.text_handler import TextDisplay
 import unicornhathd
+import time
 
 
 # Class to manage the pixel display - covers player health, opponent health, player attacks, opponent attacks.
@@ -70,7 +71,7 @@ class PixelDisplay:
     # Display a quadrant for the attack
     # quadrant 1 = Left Kick, 2 = Left Punch, 3 = Right Kick, 4 = Right Punch
     # colour = -1 means to use default
-    def workout_attack(self, quadrant, colour = -1):
+    def workout_attack(self, attack_type, delay = 0.2, colour = -1):
 
         # x and y lengths of the pixels to display
         x_len = 2
@@ -78,49 +79,61 @@ class PixelDisplay:
 
         # Translate the quadrant to pixel start locations and
         # colours.  Use Red for Right (Hue =1), Green (Hue =0.33) for Left.
-        if (quadrant == 1):
+        if (attack_type == 'KickLeft'):
             x_start = 0
             y_start = 0
 
             if colour == -1:
-                quadrant_colour=0.33
+                attack_colour=0.33
             else:
-                quadrant_colour = colour
+                attack_colour = colour
 
-        elif (quadrant == 2):
+        elif (attack_type == 'PunchLeft'):
             x_start = 0
             y_start = 11
             if colour == -1:
-                quadrant_colour=0.33
+                attack_colour=0.33
             else:
-                quadrant_colour=0.33
+                attack_colour= colour
 
-        elif (quadrant ==3):
+        elif (attack_type == 'KickRight'):
             x_start = 14
             y_start = 11
             if colour == -1:
-                quadrant_colour=0.33
+                attack_colour=1
             else:
-                quadrant_colour=1
-        elif (quadrant ==4):
+                attack_colour=1
+        elif (attack_type == 'PunchRight'):
             x_start = 14
             y_start = 0
 
             if colour == -1:
-                quadrant_colour=0.33
+                attack_colour= 1
             else:
-                quadrant_colour=1
+                attack_colour=1
 
         # Raise exception of quadrant doesn't make sense.
         else:
-            raise()
+            print("attack {} not handled " .format(attack_type))
+            x_start =7
+            y_start =0
+            attack_colour = 0.78
 
         # Set the pixels and then display.
         for i in range (x_len):
             for j in range (y_len):
-                unicornhathd.set_pixel_hsv(x_start+i, y_start+ j, quadrant_colour)
+                unicornhathd.set_pixel_hsv(x_start+i, y_start+ j, attack_colour)
 
         unicornhathd.show()
+
+        time.sleep(delay)
+        for i in range (x_len):
+            for j in range (y_len):
+                unicornhathd.set_pixel_hsv(x_start+i, y_start+ j, 0, v=0)
+
+        unicornhathd.show()
+
+
 
 
 
