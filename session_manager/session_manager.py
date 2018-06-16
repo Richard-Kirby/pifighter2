@@ -26,6 +26,7 @@ class Workout(Event, threading.Thread):
         threading.Thread.__init__(self)
         self.pix_display = pix_display
 
+
     def run_workout_sequence(self):
         print("workout seq")
 
@@ -58,7 +59,7 @@ class Workout(Event, threading.Thread):
                             else:
                                 print("Unrecognised text", attack.text)
 
-                        if attack.tag == 'Kick':
+                        elif attack.tag == 'Kick':
                             # print(Attack.text)
                             # Set the colour according to left or right
                             if attack.text == 'Left':
@@ -71,13 +72,16 @@ class Workout(Event, threading.Thread):
                                 print("Unrecognised text", attack.text)
 
                         elif attack.tag == 'Wait':
-                            self.pix_display.workout_attack('Wait')
+                            time.sleep(0.5)
                             print("wait")
 
                 elif command.tag == 'Rest':
                     # print (Command.text)
                     print("Rest")
-                    self.pix_display.workout_attack('Rest')
+                    for i in range(100, -1, -4):
+                        print(i)
+                        self.pix_display.set_opponent_attack(i)
+                        #time.sleep(0.0005)
 
             print("finished a sequence - rest")
 
@@ -135,3 +139,5 @@ if __name__ == "__main__":
     session = Session("R Kirby")
     session.setup_workout()
     session.setup_fight("Trump")
+    session.pix_display.workout_attack('KickRight')
+

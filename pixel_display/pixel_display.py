@@ -30,9 +30,9 @@ class PixelDisplay:
 
     # Display a welcome message
     def welcome_message(self, name):
-        self.text_display.display_text(" WELCOME Adversary {} to PI-FIGHTER ".format(name))
+        self.text_display.display_text("Hi {} PI-FIGHTER Here ".format(name))
 
-    # Display a welcome message
+    # Display any string
     def text_message(self, display_str):
         self.text_display.display_text(display_str)
 
@@ -77,9 +77,11 @@ class PixelDisplay:
         x_len = 2
         y_len = 5
 
+        #print(attack_type)
+
         # Translate the quadrant to pixel start locations and
         # colours.  Use Red for Right (Hue =1), Green (Hue =0.33) for Left.
-        if (attack_type == 'KickLeft'):
+        if attack_type == 'KickLeft':
             x_start = 0
             y_start = 0
 
@@ -88,7 +90,7 @@ class PixelDisplay:
             else:
                 attack_colour = colour
 
-        elif (attack_type == 'PunchLeft'):
+        elif attack_type == 'PunchLeft':
             x_start = 0
             y_start = 11
             if colour == -1:
@@ -96,14 +98,14 @@ class PixelDisplay:
             else:
                 attack_colour= colour
 
-        elif (attack_type == 'KickRight'):
+        elif attack_type == 'PunchRight':
             x_start = 14
             y_start = 11
             if colour == -1:
                 attack_colour=1
             else:
                 attack_colour=1
-        elif (attack_type == 'PunchRight'):
+        elif attack_type == 'KickRight':
             x_start = 14
             y_start = 0
 
@@ -111,6 +113,12 @@ class PixelDisplay:
                 attack_colour= 1
             else:
                 attack_colour=1
+
+        # Don't do anything special for Wait - it is just a pause.
+        elif attack_type == 'Wait':
+            x_start = 0
+            y_start = 0
+            attack_colour =0
 
         # Raise exception of quadrant doesn't make sense.
         else:

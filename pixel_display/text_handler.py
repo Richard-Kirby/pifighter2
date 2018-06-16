@@ -25,7 +25,11 @@ class TextDisplay:
         self.colour = colour
 
     # Display text as requested - set up as rainbow text - taken from Pimoroni examples.
-    def display_text(self, text):
+    def display_text(self, text, font_size=0):
+
+        # set to default font_size if not passed in.
+        if font_size ==0:
+            font_size = self.font_size
 
         curr_rotation = unicornhathd.get_rotation()
 
