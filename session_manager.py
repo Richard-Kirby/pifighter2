@@ -3,6 +3,7 @@ import time
 import threading
 import xml.etree.ElementTree as ET
 import pixel_display.pixel_display as pix_display
+import accel
 
 
 # Event Base Class
