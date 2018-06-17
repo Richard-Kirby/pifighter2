@@ -3,7 +3,6 @@ import time
 import threading
 import xml.etree.ElementTree as ET
 import pixel_display.pixel_display as pix_display
-from enum import Enum
 
 
 # Event Base Class
@@ -18,6 +17,7 @@ class Event:
         end_time = time.time()
         print("finish", end_time)
 
+
 # Workout class - handles workouts where the attack is specified by pifighter.
 class Workout(Event, threading.Thread):
 
@@ -25,7 +25,6 @@ class Workout(Event, threading.Thread):
         Event.__init__(self, "Workout")
         threading.Thread.__init__(self)
         self.pix_display = pix_display
-
 
     def run_workout_sequence(self):
         print("workout seq")

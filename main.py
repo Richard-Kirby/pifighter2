@@ -1,5 +1,5 @@
 import tkinter as tk
-import session_manager.session_manager as session_mgr
+import session_manager as session_mgr
 
 # Main application
 class Application(tk.Frame):
