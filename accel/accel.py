@@ -19,7 +19,7 @@ class Accelerometer(threading.Thread):
     avg_accel = 0  # Average acceleration over cycles
 
     # Set up the accelerometer.  Power and sensitivity settings
-    def __init__(self, cycle_num, accel_queue, delay = 0.02):
+    def __init__(self, cycle_num, accel_queue, delay = 0.03):
 
         # Initialise the Thread.
         threading.Thread.__init__(self)
