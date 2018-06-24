@@ -2,8 +2,11 @@
 import time
 import threading
 import xml.etree.ElementTree as ET
+import queue
+
+# Custom modules/packages
 import pixel_display.pixel_display as pix_display
-import accel
+import accel.accel as accel
 
 
 # Event Base Class
@@ -27,7 +30,8 @@ class Workout(Event, threading.Thread):
         threading.Thread.__init__(self)
         self.pix_display = pix_display
 
-    def run_workout_sequence(self):
+    # Run the workout sequence.
+    def run(self):
         print("workout seq")
 
         self.pix_display.text_message("Workout")
@@ -85,6 +89,7 @@ class Workout(Event, threading.Thread):
 
             print("finished a sequence - rest")
 
+    # Initialise the workout.
     def init_workout(self):
         print("Init workout")
 
@@ -105,6 +110,24 @@ class Fight(Event):
 
         print("{} v {}" .format(self.player, self.opponent))
 
+# Class to handle the attack outputs - send them to the server and display
+class AttackHandler(threading.Thread):
+
+    def __init__(self, pix_display, player_attack_q, opponent_attack_q):
+        threading.Thread.__init__(self)
+        self.pix_display = pix_display
+        self.player_attack_q = player_attack_q
+        self.opponent_attack_q = opponent_attack_q
+
+    def run(self):
+
+        print("++++++++++++++ AttackHandler+++++++")
+
+        while (1):
+            if not self.player_attack_q.empty():
+                accel_perc = float(self.player_attack_q.get_nowait())/16.0 * 100
+                print("&&&", int(accel_perc))
+                self.pix_display.set_player_attack(int(accel_perc))
 
 # Session class manages a session where the player does workouts and fights as desired.
 class Session(Event):
@@ -116,16 +139,27 @@ class Session(Event):
     def __init__(self, session_player):
         super().__init__("Session")
         self.player = session_player
-        self.pix_display = pix_display.PixelDisplay()
+
+        self.pix_display = pix_display.PixelDisplay()   
         self.pix_display.welcome_message(self.player)
+
+        self.player_q = queue.Queue()
+        self.opponent_q = queue.Queue()
+
+        self.accel = accel.Accelerometer(20, self.player_q )
+        self.accel.start()
+
+        self.attack_handler = AttackHandler(self.pix_display, self.player_q, self.opponent_q)
         print(self.player)
+        self.attack_handler.start()
 
     # Set up workout for the player.
     def setup_workout(self):
         self.workout = Workout(self.pix_display)
         print("workout happening")
-        self.workout.run_workout_sequence()
+        self.workout.start()
         self.workout.finish_event()
+
 
     # Set you a fight for he player.
     def setup_fight(self, opponent):
