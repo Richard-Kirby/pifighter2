@@ -35,6 +35,7 @@ class Workout(Event, threading.Thread):
         print("workout seq")
 
         self.pix_display.text_message("Workout")
+        print("done")
 
         # Read in the sequences from the XML file.
         sequence_tree = ET.parse('/home/pi/pifighter2/data_files/workouts/pi-fighter_seq.xml')
@@ -113,11 +114,12 @@ class Fight(Event):
 # Class to handle the attack outputs - send them to the server and display
 class AttackHandler(threading.Thread):
 
-    def __init__(self, pix_display, player_attack_q, opponent_attack_q):
+    def __init__(self, pix_display, player_attack_q, opponent_attack_q, delay=0.3):
         threading.Thread.__init__(self)
         self.pix_display = pix_display
         self.player_attack_q = player_attack_q
         self.opponent_attack_q = opponent_attack_q
+        self.delay = delay
 
     def run(self):
 
@@ -127,7 +129,13 @@ class AttackHandler(threading.Thread):
             if not self.player_attack_q.empty():
                 accel_perc = float(self.player_attack_q.get_nowait())/16.0 * 100
                 print("&&&", int(accel_perc))
+                if accel_perc >100:
+                    accel_perc = 100
+
                 self.pix_display.set_player_attack(int(accel_perc))
+                time.sleep(self.delay)
+                self.pix_display.set_player_attack(0)
+
 
 # Session class manages a session where the player does workouts and fights as desired.
 class Session(Event):
@@ -140,7 +148,7 @@ class Session(Event):
         super().__init__("Session")
         self.player = session_player
 
-        self.pix_display = pix_display.PixelDisplay()   
+        self.pix_display = pix_display.PixelDisplay()
         self.pix_display.welcome_message(self.player)
 
         self.player_q = queue.Queue()
