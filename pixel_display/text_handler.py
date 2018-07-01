@@ -130,6 +130,7 @@ class TextDisplay:
         unicornhathd.rotation(curr_rotation)
 
 if __name__ == "__main__":
-    disp = text_display()
-    disp.display_text(" Welcome to Pi-Fighter..... ")
+    disp = TextDisplay()
+    disp.display_text(" Welcome to Pi-Fighter.....0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 ")
+    disp.display_text("Workout.....")
 # unicornhathd.off()

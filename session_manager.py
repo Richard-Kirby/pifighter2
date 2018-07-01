@@ -29,12 +29,13 @@ class Workout(Event, threading.Thread):
         Event.__init__(self, "Workout")
         threading.Thread.__init__(self)
         self.pix_display = pix_display
+        self.pix_display.text_message("Workout ")
 
     # Run the workout sequence.
     def run(self):
         print("workout seq")
 
-        self.pix_display.text_message("Workout")
+
         print("done")
 
         # Read in the sequences from the XML file.
@@ -43,7 +44,7 @@ class Workout(Event, threading.Thread):
 
         for sequence in seq_root:
 
-            print(sequence.attrib)
+            #print(sequence.attrib)
             # device.show_message(Sequence.attrib, font=proportional(CP437_FONT), delay = 0.05)
             # time.sleep(.4)
 
@@ -78,24 +79,19 @@ class Workout(Event, threading.Thread):
 
                         elif attack.tag == 'Wait':
                             time.sleep(0.5)
-                            print("wait")
+                            #print("wait")
 
                 elif command.tag == 'Rest':
                     # print (Command.text)
-                    print("Rest")
+                    #print("Rest")
                     for i in range(100, -1, -4):
-                        print(i)
+                        #print(i)
                         self.pix_display.set_opponent_attack(i)
                         #time.sleep(0.0005)
 
-            print("finished a sequence - rest")
+            #print("finished a sequence - rest")
 
-    # Initialise the workout.
-    def init_workout(self):
-        print("Init workout")
 
-        # Change later to allow specific work out sequences.
-        self.run_workout_sequence()
 
 
 # Fight class - manages a fight between the player and an opponent.
@@ -123,9 +119,11 @@ class AttackHandler(threading.Thread):
 
     def run(self):
 
-        print("++++++++++++++ AttackHandler+++++++")
+        print("++++++++ AttackHandler+++++++")
 
         while (1):
+
+            # Deal with Player's attack Queue
             if not self.player_attack_q.empty():
                 accel_perc = float(self.player_attack_q.get_nowait())/16.0 * 100
                 print("&&&", int(accel_perc))
@@ -136,6 +134,20 @@ class AttackHandler(threading.Thread):
                 time.sleep(self.delay)
                 self.pix_display.set_player_attack(0)
 
+            # Deal with Player's attack Queue
+            if not self.opponent_attack_q.empty():
+                accel_perc = float(self.opponent_attack_q.get_nowait())/16.0 * 100
+                print("&&&", int(accel_perc))
+                if accel_perc >100:
+                    accel_perc = 100
+
+                self.pix_display.set_opponent_attackint(accel_perc)
+                time.sleep(self.delay)
+                self.pix_display.set_opponent_attack(0)
+
+
+            # Short sleep - to reduce the CPU drain.
+            time.sleep(0.1)
 
 # Session class manages a session where the player does workouts and fights as desired.
 class Session(Event):
@@ -151,15 +163,18 @@ class Session(Event):
         self.pix_display = pix_display.PixelDisplay()
         self.pix_display.welcome_message(self.player)
 
+
         self.player_q = queue.Queue()
         self.opponent_q = queue.Queue()
 
         self.accel = accel.Accelerometer(20, self.player_q )
         self.accel.start()
 
+        # Handles the attacks -Either player or opponent.
         self.attack_handler = AttackHandler(self.pix_display, self.player_q, self.opponent_q)
-        print(self.player)
+        #print(self.player)
         self.attack_handler.start()
+
 
     # Set up workout for the player.
     def setup_workout(self):
@@ -169,7 +184,7 @@ class Session(Event):
         self.workout.finish_event()
 
 
-    # Set you a fight for he player.
+    # Set you a fight for the player.
     def setup_fight(self, opponent):
         self.fight = Fight(self.player, opponent)
 
@@ -178,8 +193,10 @@ class Session(Event):
 
 if __name__ == "__main__":
 
+
     session = Session("R Kirby")
+
     session.setup_workout()
-    session.setup_fight("Trump")
-    session.pix_display.workout_attack('KickRight')
+    #session.setup_fight("Trump")
+    #session.pix_display.workout_attack('KickRight')
 

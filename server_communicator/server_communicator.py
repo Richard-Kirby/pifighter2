@@ -72,37 +72,55 @@ class TCPCommsThread(threading.Thread):
 
     def run(self):
 
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as tcp_socket:
 
-            # Connect to server and send data
-            tcp_socket.connect((self.server_address, self.tcp_port))
+        while (1):
 
-            while (1):
+            # Try to set up a connection and send what is in the queue
+            try:
 
-                try:
-                    # send anything out that needs to be sent.
-                    if not self.tcp_send_queue.empty():
-                        tcp_str = str(self.tcp_send_queue.get_nowait())
-                        tcp_socket.sendall(bytes(tcp_str + "\n", "utf-8"))
+                with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as tcp_socket:
 
-                    # Wait a short period of time for anything on TCP Socket.
-                    input_sock, output_sock, exception_sock = select.select([tcp_socket], [], [tcp_socket], 0.25)
+                    # Connect to server and send data
+                    print(self.server_address, self.tcp_port)
+                    tcp_socket.connect((self.server_address, self.tcp_port))
 
-                    # Go through sockets that got input
-                    for CommSocket in input_sock:
-                        if CommSocket is tcp_socket:
-                            tcp_rec_str = tcp_socket.recv(1024)
-                            self.tcp_rec_queue.put_nowait(tcp_rec_str)
-                except:
-                    print("TCP Send Failure")
-                    raise
+                    print("Connected to Server")
+
+                    while 1:
+                        try:
+
+                            # send anything out that needs to be sent.
+                            if not self.tcp_send_queue.empty():
+                                tcp_str = str(self.tcp_send_queue.get_nowait())
+                                tcp_socket.sendall(bytes(tcp_str + "\n", "utf-8"))
+
+                            # Wait a short period of time for anything on TCP Socket.
+                            input_sock, output_sock, exception_sock = select.select([tcp_socket], [], [tcp_socket], 3)
+
+                            # Go through sockets that got input
+                            for CommSocket in input_sock:
+                                if CommSocket is tcp_socket:
+                                    tcp_rec_str = tcp_socket.recv(1024)
+                                    if len(tcp_rec_str)>0:
+                                        print(tcp_rec_str)
+                                        self.tcp_rec_queue.put_nowait(tcp_rec_str)
+                        except:
+                            raise()
+
+            except:
+                print("Exception when trying to connect to send to server - retry in 15s")
+                time.sleep(15)
+
+
 
 # This class communicates with the pifighter server for the various comms, both UDP and TCP.
-class server_communicator:
+class ServerCommunicator:
 
     # Set up the class, which sets up a UDP Thread for comms that doesn't require back and forth.
     # Also sets up TCP thread to handle the comms that require query, response, etc.
-    def __init__(self, server_address, udp_server_port, udp_send_queue, udp_rec_queue, tcp_server_port, tcp_send_queue, tcp_rec_queue):
+    def __init__(self, server_address,
+                 udp_server_port, udp_send_queue, udp_rec_queue,
+                 tcp_server_port, tcp_send_queue, tcp_rec_queue):
         self.server_address = server_address
         self.udp_server_port = udp_server_port
         self.tcp_server_port = tcp_server_port
