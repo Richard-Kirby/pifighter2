@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b98157e7-a11b-45ba-8dd5-f32487bf34f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pifighter2.iml" afterPath="$PROJECT_DIR$/.idea/pifighter2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accel/__init__.py" afterPath="$PROJECT_DIR$/accel/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accel/accel.py" afterPath="$PROJECT_DIR$/accel/accel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event.py" afterPath="$PROJECT_DIR$/event.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gui/__init__.py" afterPath="$PROJECT_DIR$/gui/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gui/gui.py" afterPath="$PROJECT_DIR$/gui/gui.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/__init__.py" afterPath="$PROJECT_DIR$/pixel_display/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/bar_indicator.py" afterPath="$PROJECT_DIR$/pixel_display/bar_indicator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/pixel_display.py" afterPath="$PROJECT_DIR$/pixel_display/pixel_display.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/text_handler.py" afterPath="$PROJECT_DIR$/pixel_display/text_handler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/__init__.py" afterPath="$PROJECT_DIR$/server_communicator/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/server_communicator.py" afterPath="$PROJECT_DIR$/server_communicator/server_communicator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/udp_client.py" afterPath="$PROJECT_DIR$/server_communicator/udp_client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/udp_server.py" afterPath="$PROJECT_DIR$/server_communicator/udp_server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/session_manager.py" afterPath="$PROJECT_DIR$/session_manager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tester.py" afterPath="$PROJECT_DIR$/tester.py" />
-    </list>
+    <list default="true" id="b98157e7-a11b-45ba-8dd5-f32487bf34f4" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,45 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="accel.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accel/accel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="96" column="3" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="session_manager.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/session_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
+            <state relative-caret-position="89">
               <caret line="36" column="47" lean-forward="true" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-              <folding>
-                <element signature="e#23#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text_handler.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pixel_display/text_handler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pixel_display.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pixel_display/pixel_display.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -566,9 +510,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="96" column="3" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -590,11 +532,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/session_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
+        <state relative-caret-position="89">
           <caret line="36" column="47" lean-forward="true" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-          <folding>
-            <element signature="e#23#34#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
