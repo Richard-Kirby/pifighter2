@@ -38,7 +38,7 @@ class Application(tk.Frame):
 
         # Holds player string.
         self.player = tk.StringVar()
-        pi_fighter_width = 30
+        pi_fighter_width = 40
         pi_fighter_font = ("Starjhol.ttf", 12, "bold")
 
         # Title of the application
@@ -102,7 +102,6 @@ class Application(tk.Frame):
         self.quit.pack(side="bottom")
 
 
-
     # Start workout
     def start_workout(self):
         print("Start workout")
@@ -148,7 +147,7 @@ class Application(tk.Frame):
             #self.opponent_list.update()
 
         # Check for a new list once in a while from the server.
-        #root.after(15000000, self.opponent_list_setup())
+        root.after(15000000000000000000, self.opponent_list_setup())
 
 
 
@@ -170,8 +169,12 @@ class Application(tk.Frame):
     # Start fight
     def start_fight(self):
         self.opponent_select()
-        print("Start fight {} v {}".format(self.player.get(), self.opponent))
+
+        fight_str = "Fight {} v {}".format(self.player.get(), self.opponent)
+
         self.session.setup_fight(self.opponent)
+
+        self.player.set(fight_str)
 
 
 

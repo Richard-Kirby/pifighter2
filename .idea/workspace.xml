@@ -18,8 +18,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="96" column="10" lean-forward="false" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
+            <state relative-caret-position="-420">
+              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -28,8 +28,8 @@
       <file leaf-file-name="session_manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/session_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="198" column="0" lean-forward="true" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+            <state relative-caret-position="1740">
+              <caret line="202" column="0" lean-forward="true" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,8 +48,8 @@
       <file leaf-file-name="pi-fighter-server.py" pinned="false" current-in-tab="false">
         <entry file="file://W:/Raspberry-Pi-Gym/pi-fighter-server/pi-fighter-server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="464" column="32" lean-forward="false" selection-start-line="464" selection-start-column="32" selection-end-line="464" selection-end-column="32" />
+            <state relative-caret-position="4724">
+              <caret line="601" column="0" lean-forward="false" selection-start-line="601" selection-start-column="0" selection-end-line="601" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,14 +98,14 @@
         <option value="$PROJECT_DIR$/pixel_display/text_handler.py" />
         <option value="$PROJECT_DIR$/stats.py" />
         <option value="$PROJECT_DIR$/server_communicator/server_communicator.py" />
-        <option value="W:/Raspberry-Pi-Gym/pi-fighter-server/pi-fighter-server.py" />
         <option value="$PROJECT_DIR$/session_manager.py" />
+        <option value="W:/Raspberry-Pi-Gym/pi-fighter-server/pi-fighter-server.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="748" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="364" />
     <option name="y" value="-10" />
     <option name="width" value="1996" />
     <option name="height" value="1756" />
@@ -215,7 +215,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="374" y="-5" width="998" height="878" extended-state="0" />
+    <frame x="182" y="-5" width="998" height="878" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12948062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -249,8 +249,18 @@
           <line>86</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://W:/Raspberry-Pi-Gym/pi-fighter-server/pi-fighter-server.py</url>
+          <line>522</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -559,6 +569,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/session_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="202" column="0" lean-forward="true" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server_communicator/server_communicator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="881">
@@ -569,24 +587,16 @@
     </entry>
     <entry file="file://W:/Raspberry-Pi-Gym/pi-fighter-server/pi-fighter-server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="464" column="32" lean-forward="false" selection-start-line="464" selection-start-column="32" selection-end-line="464" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/session_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="198" column="0" lean-forward="true" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+        <state relative-caret-position="4724">
+          <caret line="601" column="0" lean-forward="false" selection-start-line="601" selection-start-column="0" selection-end-line="601" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="96" column="10" lean-forward="false" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
+        <state relative-caret-position="-420">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding />
         </state>
       </provider>
