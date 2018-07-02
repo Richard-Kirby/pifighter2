@@ -80,6 +80,9 @@ class TCPCommsThread(threading.Thread):
 
                 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as tcp_socket:
 
+                    # Make non-blocking
+                    #tcp_socket.setblocking(0)
+
                     # Connect to server and send data
                     print(self.server_address, self.tcp_port)
                     tcp_socket.connect((self.server_address, self.tcp_port))
@@ -94,21 +97,31 @@ class TCPCommsThread(threading.Thread):
                                 tcp_str = str(self.tcp_send_queue.get_nowait())
                                 tcp_socket.sendall(bytes(tcp_str + "\n", "utf-8"))
 
+                            input_sock =[]
+
                             # Wait a short period of time for anything on TCP Socket.
-                            input_sock, output_sock, exception_sock = select.select([tcp_socket], [], [tcp_socket], 3)
+                            input_sock, output_sock, exception_sock = select.select([tcp_socket], [], [tcp_socket], 2)
 
                             # Go through sockets that got input
-                            for CommSocket in input_sock:
-                                if CommSocket is tcp_socket:
-                                    tcp_rec_str = tcp_socket.recv(1024)
-                                    if len(tcp_rec_str)>0:
-                                        print(tcp_rec_str)
-                                        self.tcp_rec_queue.put_nowait(tcp_rec_str)
+                            if len(input_sock) > 0:
+
+                                # print(len(input_sock))
+
+                                for CommSocket in input_sock:
+                                    if CommSocket is tcp_socket:
+
+                                        # print("Processing Input")
+
+                                        tcp_rec_str = tcp_socket.recv(1024)
+                                        if len(tcp_rec_str)>0:
+                                            print(tcp_rec_str)
+                                            self.tcp_rec_queue.put_nowait(tcp_rec_str)
                         except:
                             raise()
 
             except:
                 print("Exception when trying to connect to send to server - retry in 15s")
+                #raise()
                 time.sleep(15)
 
 

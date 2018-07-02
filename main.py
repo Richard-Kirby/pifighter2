@@ -70,18 +70,16 @@ class Application(tk.Frame):
         self.player_button["command"] = self.player_select
         self.player_button.pack(side="top")
 
-        # get list of opponents from the server. todo need to make robust
-        self.opponent_list_setup()
-
         # Create opponent list.
         self.opponent_list = tk.Listbox(self, font=pi_fighter_font, width=pi_fighter_width, selectmode=tk.SINGLE,
                                         exportselection=0)
 
-        for opponent in self.opponents:
-            self.opponent_list.insert(tk.END, opponent)
         self.opponent_list.pack(side="top")
         self.opponent_list.select_set(0)  # This only sets focus on the first item.
         self.opponent_list.event_generate("<<ListboxSelect>>")
+
+        # get list of opponents from the server. todo need to make robust
+        self.opponent_list_setup()
 
         # Workout button initiates a workout.
         self.workout = tk.Button(self, font=pi_fighter_font, bg="green")
@@ -95,10 +93,15 @@ class Application(tk.Frame):
         self.workout["command"] = self.start_fight
         self.workout.pack(side="top")
 
+        # Window to display the current fight information
+        # self.fight_window = tk.Text
+
         # Quit button
         self.quit = tk.Button(self, text="QUIT", fg="red", font=pi_fighter_font,
                               command=self.master.destroy)
         self.quit.pack(side="bottom")
+
+
 
     # Start workout
     def start_workout(self):
@@ -112,76 +115,42 @@ class Application(tk.Frame):
         self.tcp_send_q.put_nowait("<OpponentList></OpponentList>")
         print("Put Opponent List Request into TCP Queue")
 
-        retries =0
+        # Allow a few seconds for a response.
+        time.sleep(3)
+
         # Processing of Opponent Information - create a list of opponents
         self.opponents = []
 
-        while retries < 6 and len(self.opponents) == 0:
-            time.sleep(5)
+        if not self.tcp_rec_q.empty():
 
-            if not self.tcp_rec_q.empty():
+            # Blocking waiting for a list of oppoonents.
+            server_data = self.tcp_rec_q.get()
 
-                # Blocking waiting for a list of oppoonents.
-                server_data = self.tcp_rec_q.get()
+            # Decode to ASCII so it can be processed.
+            server_str = server_data.decode('ascii')
 
-                # Decode to ASCII so it can be processed.
-                server_str = server_data.decode('ascii')
+            # print (ServerStr)
 
-                # print (ServerStr)
-
-                # Put the data into an XML Element Tree
-                server_element = et.fromstring(server_str)
+            # Put the data into an XML Element Tree
+            server_element = et.fromstring(server_str)
 
 
-                if server_element.tag == 'OpponentList':
-                    for child in server_element:
-                        # print (Child.tag + Child.text)
-                        if child.tag == 'Opponent':
-                            opponent_info = child.text
-                            self.opponents.append(opponent_info)
+            if server_element.tag == 'OpponentList':
+                for child in server_element:
+                    # print (Child.tag + Child.text)
+                    if child.tag == 'Opponent':
+                        opponent_info = child.text
+                        self.opponents.append(opponent_info)
 
-            else:
-                retries += 1
-                print("retries: ", retries)
+            for opponent in self.opponents:
+                self.opponent_list.insert(tk.END, opponent)
+
+            #self.opponent_list.update()
+
+        # Check for a new list once in a while from the server.
+        #root.after(15000000, self.opponent_list_setup())
 
 
-        return
-
-        ''' Original Code 
-
-        i = 0
-        for Opponent in OpponentList:
-            print("{:d}. {}".format(i, Opponent))
-            i += 1
-
-        SelectedOpponent = input("Select the number of the Opponent:")
-
-        print("{} is your selected opponent - calling them to the ring".format(OpponentList[int(SelectedOpponent)]))
-        SelectedOppStr = "<SelectedOpponent>{}</SelectedOpponent>".format(OpponentList[int(SelectedOpponent)])
-        TCPCommSendQueue.put_nowait(SelectedOppStr)
-        UDPCommSendQueue.put_nowait(SelectedOppStr)
-
-        # Waiting to hear back from the server - will indicate the opponent is ready.  
-        ServerData = TCPCommRecQueue.get()
-
-        # Decode to ASCII so it can be processed.
-        ServerStr = ServerData.decode('ascii')
-
-        # Put the data into an XML Element Tree
-        ServerElement = ET.fromstring(ServerStr)
-
-        if (ServerElement.tag == 'OpponentReady'):
-            Opponent = ServerElement.text
-
-            print("{} is ready to take you apart - are you scared?  You should be! ".format(Opponent))
-
-            Matrix.Intro("Pi-Fighting {}".format(Opponent))
-
-        else:
-            print("Trouble processing String {}", ServerElement.tag)
-
-        return Opponent
-        '''
 
     # Set Player.
     def player_select(self):
@@ -190,7 +159,7 @@ class Application(tk.Frame):
         print(self.player.get())
 
         # Set up a session for this player.
-        self.session = session_mgr.Session(self.player.get())
+        self.session = session_mgr.Session(self.player.get(), self.tcp_send_q, self.tcp_rec_q, self.udp_send_q, self.udp_rec_q)
 
     # Set opponent
     def opponent_select(self):
@@ -202,10 +171,8 @@ class Application(tk.Frame):
     def start_fight(self):
         self.opponent_select()
         print("Start fight {} v {}".format(self.player.get(), self.opponent))
-        selected_opp_str = "<SelectedOpponent>{}</SelectedOpponent>".format(self.opponent)
-        self.tcp_send_q.put_nowait(selected_opp_str)
-        time.sleep(1)
-        self.udp_send_q.put_nowait(selected_opp_str)
+        self.session.setup_fight(self.opponent)
+
 
 
 root = tk.Tk()

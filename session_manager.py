@@ -156,9 +156,13 @@ class Session(Event):
     fight = ""
     workout = ""
 
-    def __init__(self, session_player):
+    def __init__(self, session_player, tcp_send_q, tcp_rec_q, udp_send_q, udp_rec_q):
         super().__init__("Session")
         self.player = session_player
+        self.tcp_send_q = tcp_send_q
+        self.tcp_rec_q = tcp_rec_q
+        self.udp_send_q = udp_send_q
+        self.udp_rec_q = udp_rec_q
 
         self.pix_display = pix_display.PixelDisplay()
         self.pix_display.welcome_message(self.player)
@@ -187,6 +191,12 @@ class Session(Event):
     # Set you a fight for the player.
     def setup_fight(self, opponent):
         self.fight = Fight(self.player, opponent)
+        selected_opp_str = "<SelectedOpponent>{}</SelectedOpponent>".format(opponent)
+        print(selected_opp_str)
+        self.tcp_send_q.put_nowait(selected_opp_str)
+        time.sleep(1)
+        self.udp_send_q.put_nowait(selected_opp_str)
+
 
     def close_session(self):
         print("Session Closing")
