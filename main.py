@@ -3,19 +3,24 @@ import configparser
 import queue
 import xml.etree.ElementTree as et
 import time
+import threading
 
 # My modules
 import session_manager as session_mgr
 import server_communicator.server_communicator as server_comm
 
+
+
 # Main application
-class Application(tk.Frame):
+class Application(tk.Frame, threading.Thread):
     players = ["Richard Kirby", "Joh Kirby", "GUEST"]
     opponents = ["Darth", "Yoda", "Others"]
 
     # Set up the basic GUI elements
     def __init__(self, master=None):
         super().__init__(master)
+        threading.Thread.__init__(self)
+
         self.master = master
 
         # Read in the config
@@ -108,47 +113,70 @@ class Application(tk.Frame):
         self.session.close_session()
         self.session.setup_workout()
 
-    def opponent_list_setup(self):
-        # Get list of Opponents
+    def run(self):
 
-        self.tcp_send_q.put_nowait("<OpponentList></OpponentList>")
-        print("Put Opponent List Request into TCP Queue")
+        while(1):
 
-        # Allow a few seconds for a response.
-        time.sleep(3)
+            #print("1")
+            if not self.tcp_rec_q.empty():
 
-        # Processing of Opponent Information - create a list of opponents
-        self.opponents = []
+                # Blocking waiting for a list of oppoonents.
+                server_data = self.tcp_rec_q.get()
 
-        if not self.tcp_rec_q.empty():
+                # Decode to ASCII so it can be processed.
+                server_str = server_data.decode('ascii')
 
-            # Blocking waiting for a list of oppoonents.
-            server_data = self.tcp_rec_q.get()
+                # print (ServerStr)
 
-            # Decode to ASCII so it can be processed.
-            server_str = server_data.decode('ascii')
-
-            # print (ServerStr)
-
-            # Put the data into an XML Element Tree
-            server_element = et.fromstring(server_str)
+                # Put the data into an XML Element Tree
+                server_element = et.fromstring(server_str)
 
 
-            if server_element.tag == 'OpponentList':
-                for child in server_element:
-                    # print (Child.tag + Child.text)
-                    if child.tag == 'Opponent':
-                        opponent_info = child.text
-                        self.opponents.append(opponent_info)
+                if server_element.tag == 'OpponentList':
+                    for child in server_element:
+                        # print (Child.tag + Child.text)
+                        if child.tag == 'Opponent':
+                            opponent_info = child.text
+                            print(opponent_info)
+                            self.opponents.append(opponent_info)
 
-            for opponent in self.opponents:
-                self.opponent_list.insert(tk.END, opponent)
+                    for opponent in self.opponents:
+                        self.opponent_list.insert(tk.END, opponent)
 
-            #self.opponent_list.update()
+                elif server_element.tag == 'OpponentReady':
+                    print("** Opponent Ready", server_element.text)
+                    self.session.fight.start_fight()
 
+            if not self.udp_rec_q.empty():
+
+                # Blocking waiting for a list of oppoonents.
+                server_data = self.udp_rec_q.get()
+
+                # Decode to ASCII so it can be processed.
+                server_str = server_data.decode('ascii')
+
+                # print (ServerStr)
+
+                # Put the data into an XML Element Tree
+                server_element = et.fromstring(server_str)
+
+                if server_element.tag == 'Attack':
+                    print("Attack ", server_str)
+                else:
+                    print("Unable to Decode ",server_str)
+
+                    #self.opponent_list.update()
+            time.sleep(0.01)
         # Check for a new list once in a while from the server.
         #root.after(15000000000000000000, self.opponent_list_setup())
 
+
+
+    def opponent_list_setup(self):
+        # Get list of Opponents
+        self.opponents = []
+        self.tcp_send_q.put_nowait("<OpponentList></OpponentList>")
+        print("Put Opponent List Request into TCP Queue")
 
 
     # Set Player.
@@ -159,6 +187,8 @@ class Application(tk.Frame):
 
         # Set up a session for this player.
         self.session = session_mgr.Session(self.player.get(), self.tcp_send_q, self.tcp_rec_q, self.udp_send_q, self.udp_rec_q)
+
+        self.session.start()
 
     # Set opponent
     def opponent_select(self):
@@ -172,12 +202,17 @@ class Application(tk.Frame):
 
         fight_str = "Fight {} v {}".format(self.player.get(), self.opponent)
 
-        self.session.setup_fight(self.opponent)
-
+        # Updates the banner at the top of the application.
         self.player.set(fight_str)
 
+
+        # Set up the fight.
+        self.session.setup_fight(self.opponent)
 
 
 root = tk.Tk()
 app = Application(master=root)
+
+app.start()
+
 app.mainloop()

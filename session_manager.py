@@ -107,6 +107,9 @@ class Fight(Event):
 
         print("{} v {}" .format(self.player, self.opponent))
 
+    def start_fight(self):
+        print("Starting the fight")
+
 # Class to handle the attack outputs - send them to the server and display
 class AttackHandler(threading.Thread):
 
@@ -115,49 +118,15 @@ class AttackHandler(threading.Thread):
         self.pix_display = pix_display
         self.player_attack_q = player_attack_q
         self.opponent_attack_q = opponent_attack_q
-        self.delay = delay
-
-    def run(self):
-
-        print("++++++++ AttackHandler+++++++")
-
-        while (1):
-
-            # Deal with Player's attack Queue
-            if not self.player_attack_q.empty():
-                accel_perc = float(self.player_attack_q.get_nowait())/16.0 * 100
-                print("&&&", int(accel_perc))
-                if accel_perc >100:
-                    accel_perc = 100
-
-                self.pix_display.set_player_attack(int(accel_perc))
-                time.sleep(self.delay)
-                self.pix_display.set_player_attack(0)
-
-            # Deal with Player's attack Queue
-            if not self.opponent_attack_q.empty():
-                accel_perc = float(self.opponent_attack_q.get_nowait())/16.0 * 100
-                print("&&&", int(accel_perc))
-                if accel_perc >100:
-                    accel_perc = 100
-
-                self.pix_display.set_opponent_attackint(accel_perc)
-                time.sleep(self.delay)
-                self.pix_display.set_opponent_attack(0)
-
-
-            # Short sleep - to reduce the CPU drain.
-            time.sleep(0.1)
 
 # Session class manages a session where the player does workouts and fights as desired.
-class Session(Event):
-
-    player = ""
-    fight = ""
-    workout = ""
+class Session(Event, threading.Thread):
 
     def __init__(self, session_player, tcp_send_q, tcp_rec_q, udp_send_q, udp_rec_q):
-        super().__init__("Session")
+
+        Event.__init__(self, "Session")
+        threading.Thread.__init__(self)
+
         self.player = session_player
         self.tcp_send_q = tcp_send_q
         self.tcp_rec_q = tcp_rec_q
@@ -168,17 +137,14 @@ class Session(Event):
         self.pix_display.welcome_message(self.player)
 
 
-        self.player_q = queue.Queue()
-        self.opponent_q = queue.Queue()
+        self.player_attack_q = queue.Queue()
+        self.opponent_attack_q = queue.Queue()
 
-        self.accel = accel.Accelerometer(20, self.player_q )
+        self.accel = accel.Accelerometer(20, self.player_attack_q )
         self.accel.start()
 
-        # Handles the attacks -Either player or opponent.
-        self.attack_handler = AttackHandler(self.pix_display, self.player_q, self.opponent_q)
-        #print(self.player)
-        self.attack_handler.start()
-
+        # Delay for display.  todo needs to be tuned.
+        self.delay=0.05
 
     # Set up workout for the player.
     def setup_workout(self):
@@ -186,6 +152,44 @@ class Session(Event):
         print("workout happening")
         self.workout.start()
         self.workout.finish_event()
+
+    def run(self):
+
+        print("++++++++ AttackHandler+++++++")
+
+        while (1):
+
+            # Deal with Player's attack Queue
+            if not self.player_attack_q.empty():
+                accel_str =  self.player_attack_q.get_nowait()
+                accel_perc = float(accel_str)/16.0 * 100
+                print("&&&", int(accel_perc))
+
+                self.udp_send_q.put_nowait(accel)
+
+                # Limit display to maximum 100%
+                if accel_perc >100:
+                    accel_perc = 100
+
+                self.pix_display.set_player_attack(int(accel_perc))
+                time.sleep(self.delay)
+                self.pix_display.set_player_attack(0)
+
+
+            # Deal with Opponent's attack Queue
+            if not self.opponent_attack_q.empty():
+                accel_perc = float(self.opponent_attack_q.get_nowait())/16.0 * 100
+                print("&&&", int(accel_perc))
+                if accel_perc >100:
+                    accel_perc = 100
+
+                self.pix_display.set_opponent_attack(int(accel_perc))
+                time.sleep(self.delay)
+                self.pix_display.set_opponent_attack(0)
+
+
+            # Short sleep - to reduce the CPU drain.
+            time.sleep(0.1)
 
 
     # Set you a fight for the player.

@@ -93,7 +93,10 @@ class Accelerometer(threading.Thread):
                 #print(time.time(), "^^", my_accel.max_accel, self.recent_reads.__len__())
                 if self.max_accel > 2 and self.recent_reads.__len__() == self.cycle_num:
                     print(time.time(), self.total_accel, "^^", self.max_accel, self.accel_queue.qsize())
+
+                    # Send to acceleration queue
                     self.accel_queue.put_nowait(self.max_accel)
+
                     print("#####",  self.accel_queue.qsize())
 
                     # Clear out the deque, so we don't report again too soon.
