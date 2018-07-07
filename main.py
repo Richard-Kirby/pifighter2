@@ -147,7 +147,7 @@ class Application(tk.Frame):
             #self.opponent_list.update()
 
         # Check for a new list once in a while from the server.
-        root.after(15000000000000000000, self.opponent_list_setup())
+        #root.after(15000000000000000000, self.opponent_list_setup())
 
 
 
