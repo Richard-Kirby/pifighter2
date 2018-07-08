@@ -32,8 +32,10 @@ class UDPCommsThread(threading.Thread):
 
                 try:
                     # Take anything that is in the Queue and send it on to the server.
-                    if self.udp_send_queue.empty() == False:
+                    if not self.udp_send_queue.empty():
                         udp_send_str = self.udp_send_queue.get_nowait()
+
+                        print("Sending UDP message Server ", udp_send_str)
                         numbytes = udp_socket.sendto(bytes(udp_send_str, "utf-8"), (self.server_address, self.udp_port))
 
                     # Receiving data - prevents blocking.
@@ -43,7 +45,7 @@ class UDPCommsThread(threading.Thread):
                     for comm_socket in input_sock:
                         if comm_socket is udp_socket:
                             udp_rec_str = udp_socket.recv(1024)
-                            #print (udp_rec_str)
+                            print("%%% udp_rec_str ", udp_rec_str)
 
                             # Change the below to a receive Queue later.
                             self.udp_rec_queue.put_nowait(udp_rec_str)

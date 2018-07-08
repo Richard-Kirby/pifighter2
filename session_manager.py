@@ -110,15 +110,6 @@ class Fight(Event):
     def start_fight(self):
         print("Starting the fight")
 
-# Class to handle the attack outputs - send them to the server and display
-class AttackHandler(threading.Thread):
-
-    def __init__(self, pix_display, player_attack_q, opponent_attack_q, delay=0.3):
-        threading.Thread.__init__(self)
-        self.pix_display = pix_display
-        self.player_attack_q = player_attack_q
-        self.opponent_attack_q = opponent_attack_q
-
 # Session class manages a session where the player does workouts and fights as desired.
 class Session(Event, threading.Thread):
 
@@ -144,7 +135,7 @@ class Session(Event, threading.Thread):
         self.accel.start()
 
         # Delay for display.  todo needs to be tuned.
-        self.delay=0.05
+        self.delay=0.2
 
     # Set up workout for the player.
     def setup_workout(self):
@@ -165,7 +156,11 @@ class Session(Event, threading.Thread):
                 accel_perc = float(accel_str)/16.0 * 100
                 print("&&&", int(accel_perc))
 
-                self.udp_send_q.put_nowait(accel)
+                attack_str = "<Attack>{}</Attack>" .format(accel_str)
+
+                print(attack_str)
+
+                self.udp_send_q.put_nowait(attack_str)
 
                 # Limit display to maximum 100%
                 if accel_perc >100:
@@ -199,7 +194,7 @@ class Session(Event, threading.Thread):
         print(selected_opp_str)
         self.tcp_send_q.put_nowait(selected_opp_str)
         time.sleep(1)
-        #self.udp_send_q.put_nowait(selected_opp_str)
+        self.udp_send_q.put_nowait(selected_opp_str)
 
 
     def close_session(self):

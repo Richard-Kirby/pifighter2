@@ -149,7 +149,7 @@ class Application(tk.Frame, threading.Thread):
 
             if not self.udp_rec_q.empty():
 
-                # Blocking waiting for a list of oppoonents.
+                # Get data from server
                 server_data = self.udp_rec_q.get()
 
                 # Decode to ASCII so it can be processed.

@@ -8,9 +8,10 @@ import datetime
 import logging
 import time
 import queue
+import sys
 
-NumAttacks = 0
-OpponentDefeated = False
+num_attacks = 0
+opponent_defeated = False
 FinalAttackNum = 0
 
 # Event to indicate the fight is over.  This synchronises across threads.  
@@ -19,10 +20,11 @@ FightOver.clear()
 
 AllPlayers = []
 
-class ClientDisconnnect(Exception):
 
+class ClientDisconnnect(Exception):
     def __init__(self, message):
         self.message = message
+
 
 class PlayerManager:
     UserFile = "pi-fighter-users.xml"
@@ -67,7 +69,7 @@ class PlayerManager:
             # If ind the right player then update his/her health.
             if (User.attrib.get('Name') == Player.name):
                 User.find('Health').text = str(Player.Health)
-            # print ("$${}$$".format(User.find('Health').text))
+                # print ("$${}$$".format(User.find('Health').text))
 
     # Update the XML file for persistent storage.
     def UpdatePlayerFile(self):
@@ -107,7 +109,7 @@ class VirtualFighter(fighter):
         super(VirtualFighter, self).__init__(name, health)
         self.AttackFile = AttackFileName
 
-    # print (self.name, self.Health, self.AttackFile)
+        # print (self.name, self.Health, self.AttackFile)
 
 
 # Build a list of Virtual Fighters - should be put into a file.
@@ -141,7 +143,7 @@ class Player(fighter):
         self.Health += RewardPts
         print(
             "Bonus Health - Player {}'s profile now has {} health points.\n  {} started session with {} and currently has {}"
-            .format(self.name, self.Health, self.name, self.InitialHealth, self.CurrentHealth))
+                .format(self.name, self.Health, self.name, self.InitialHealth, self.CurrentHealth))
 
 
 # Player = Player("Example")
@@ -184,14 +186,17 @@ class PiFighterUDPHandler(socketserver.BaseRequestHandler):
     # Send the opponents health to the Client. Client needs to display
     def SendOpponentInfo(self):
         global HealthPoints
-        global NumAttacks
-        global OpponentDefeated
-        global Opponent
+        global num_attacks
+        global opponent_defeated
+        global opponent
+        global PiAddress
 
         OpponentHealthStr = "<OpponentInfo><Name>{}</Name><HealthPoints>{}</HealthPoints><Defeated>{}</Defeated></OpponentInfo>".format(
-            Opponent.name, Opponent.CurrentHealth, OpponentDefeated)
-        socket = self.request[1]
-        socket.sendto(bytes(OpponentHealthStr, "utf-8"), self.client_address)
+            opponent.name, opponent.CurrentHealth, opponent_defeated)
+
+        self.socket.sendto(bytes(OpponentHealthStr, "utf-8"), self.client_address)
+        #self.socket.sendto(bytes(OpponentHealthStr, "utf-8"), PiAddress)
+
 
     # Send the player's current health to the Client.
     def SendPlayerInfo(self):
@@ -201,30 +206,33 @@ class PiFighterUDPHandler(socketserver.BaseRequestHandler):
         Defeated = (Player.CurrentHealth < 0)
         PlayerHealthStr = "<PlayerInfo><HealthPoints>{}</HealthPoints><Defeated>{}</Defeated></PlayerInfo>".format(
             Player.CurrentHealth, Defeated)
-        socket = self.request[1]
-        socket.sendto(bytes(PlayerHealthStr, "utf-8"), PiAddress)
+
+        print(PlayerHealthStr)
+        #socket = self.request[1]
+        self.socket.sendto(bytes(PlayerHealthStr, "utf-8"), self.client_address)
+        #self.request.(bytes(PlayerHealthStr, "utf-8"))
 
     def SendAttack(self, date_string, time_string, MaxAccel):
         AttackStr = "<Attack><Date>{}</Date><Time>{}</Time><XAccel>{:2.3}</XAccel><YAccel>{:2.3f}</YAccel><ZAccel>{:2.3f}</ZAccel></Attack>".format(
             date_string, time_string, MaxAccel[0], MaxAccel[1], MaxAccel[2])
-        self.request.sendall(bytes(AttackStr, "utf-8"))
+        self.request[1].sendto(bytes(AttackStr, "utf-8"), self.client_address)
 
     def handle(self):
         global HealthPoints
-        global NumAttacks
-        global OpponentDefeated
+        global num_attacks
+        global opponent_defeated
         global FinalAttackNum
         global OpponentName
         global Player
-        global PiAddress
         global OpponentStartHealth
         global PlayerMgr
+        global PiAddress
 
         self.timeout = 0
 
         # self.request is the UDP socket connected to the client
         self.data = self.request[0].strip()
-        socket = self.request[1]
+        self.socket = self.request[1]
 
         # Decode to ASCII so it can be processed.
         ClientStr = self.data.decode('ascii')
@@ -239,78 +247,73 @@ class PiFighterUDPHandler(socketserver.BaseRequestHandler):
 
             # If Attack received, then calcualte the effect on the opponent.
 
+            print("$$$ ", ClientElement.tag)
+
             if (ClientElement.tag == 'Attack'):
 
-                # print("Opponent is {}" .format(OpponentName))
-                AttackLogs.write(ClientStr + "\n")
+                damage = float(ClientElement.text)
 
-                # Read through all the information
-                for Child in ClientElement:
-                    # print (Child.tag)
+                if (damage > 2):
+                    opponent.DecrementHealth(damage)
+                    print(damage, num_attacks)
+                    num_attacks += 1
 
-                    # ZAccel does the damage - ignore if less than 2g
-                    if (Child.tag == 'ZAccel'):
-                        # print(Child.text)
-                        Damage = float(Child.text)
+                    # Determine if Opponent is Defeated
+                    if opponent.CurrentHealth < 0:
 
-                        if (Damage > 2):
-                            Opponent.DecrementHealth(Damage)
-                            NumAttacks += 1
-                            # print (NumAttacks, HealthPoints)
+                        if not opponent_defeated:
+                            FinalAttackNum = num_attacks
+                            opponent_defeated = True
+                            FightOver.set()
 
-                            # Determine if Opponent is Defeated
-                            if (Opponent.CurrentHealth < 0):
-                                if (OpponentDefeated == False):
-                                    FinalAttackNum = NumAttacks
-                                    OpponentDefeated = True
-                                    FightOver.set()
+                            # Player won, allow up to 50% regen
+                            Player.Regen(50)
 
-                                    # Player won, allow up to 50% regen
-                                    Player.Regen(50)
+                            # Reward player with 2% of the opponents health points
+                            Player.RewardHealthPoint(0.02 * opponent.InitialHealth)
 
-                                    # Reward player with 2% of the opponents health points
-                                    Player.RewardHealthPoint(0.02 * Opponent.InitialHealth)
+                            # Keep Player Information up to date in XML as well.
+                            PlayerMgr.UpdatePlayerXML(Player)
+                            PlayerMgr.UpdatePlayerFile()
 
-                                    # Keep Player Information up to date in XML as well.
-                                    PlayerMgr.UpdatePlayerXML(Player)
-                                    PlayerMgr.UpdatePlayerFile()
+                        if (opponent_defeated == True):
+                            print("That dude is finished after - stop beating on him/her - Oh the Humanity",
+                                  FinalAttackNum)
 
-                                if (OpponentDefeated == True):
-                                    print("That dude is finished after - stop beating on him/her - Oh the Humanity",
-                                          FinalAttackNum)
+                    # Send Opponent Information to the Client for display or other usage.
+                    self.SendOpponentInfo()
 
-                            # Send Opponent Information to the Client for display or other usage.
-                            self.SendOpponentInfo()
-
-                            # If first attack (player gets first punch), then start up the attacks from the opponent.
-                            if (NumAttacks == 1):
-                                print("run attacker thread")
-                                # Spin off opponent thread here.
-                                AttackerThread = OpponentAttackThread(1, "Attacker Thread - Punch Up", 1, Opponent)
-                                # AttackerThread.setDaemon(True)
-                                AttackerThread.start()
-                                FirstAttack = False
+                    # If first attack (player gets first punch), then start up the attacks from the opponent.
+                    if (num_attacks == 1):
+                        print("run attacker thread")
+                        # Spin off opponent thread here.
+                        AttackerThread = OpponentAttackThread(1, "Attacker Thread - Punch Up", 1, opponent)
+                        # AttackerThread.setDaemon(True)
+                        AttackerThread.start()
+                        FirstAttack = False
 
             elif (ClientElement.tag == 'SelectedOpponent'):
                 # Send Opponent Information to the Client for display or other usage.
 
                 self.SendOpponentInfo()
-                PiAddress = self.client_address
 
                 self.FirstAttack = True
 
-                # print (PiAddress)
+                PiAddress = self.client_address
 
-                NumAttacks = 0
+                print(PiAddress)
+
+
+                num_attacks = 0
                 # Send Player information to initialise
                 self.SendPlayerInfo()
 
-            elif (ClientElement.tag == 'OpponentAttack'):
+            elif ClientElement.tag == 'OpponentAttack':
                 # Adjust the User's health by the amount of the attack
 
                 AttackValue = float(ClientElement.text)
 
-                if (FightOver.isSet() != True):
+                if not FightOver.isSet():
                     Player.DecrementHealth(AttackValue)
                     self.SendPlayerInfo()
                 else:
@@ -318,7 +321,7 @@ class PiFighterUDPHandler(socketserver.BaseRequestHandler):
 
                 # Declare fight over if Player has lost all health.
                 if (Player.CurrentHealth < 0):
-                    print("Player Lost to ", Opponent.name)
+                    print("Player Lost to ", opponent.name)
                     FightOver.set()
 
 
@@ -327,7 +330,7 @@ class PiFighterUDPHandler(socketserver.BaseRequestHandler):
 
         except:
             print("Trouble Processing String: {}".format(ClientStr))
-            raise ()
+            raise
 
 
 # Class to handle the TCP Comms - manages the session, etc. 
@@ -351,6 +354,8 @@ class UDPCommsThread(threading.Thread):
             UDPserver = socketserver.UDPServer((config['SERVER']['SERVER_HOST'], int(config['SERVER']['UDP_PORT'])),
                                                PiFighterUDPHandler)
 
+            print("UDP")
+
             # Activate the server; this will keep running until you
             # interrupt the program with Ctrl-C
             UDPserver.serve_forever()
@@ -360,7 +365,7 @@ class UDPCommsThread(threading.Thread):
 
 
         finally:
-            UDPServer.close()
+            UDPserver.close()
             exit()
 
 
@@ -426,7 +431,7 @@ class OpponentAttackThread(threading.Thread):
                                 if (AttackSleep > 3):
                                     AttackSleep = 1.5
 
-                                # print ("****{}".format(AttackSleep))
+                                    # print ("****{}".format(AttackSleep))
 
                             # Handling for first attack in the file.  Nothing to compare against.
                             else:
@@ -442,8 +447,8 @@ class OpponentAttackThread(threading.Thread):
                         if (Child.tag == 'ZAccel'):
                             # print(Child.text)
                             Damage = float(Child.text)
-                        # print (Damage)
-                        # Attacks.Append(Damage)
+                            # print (Damage)
+                            # Attacks.Append(Damage)
 
                 AttackArray.append([AttackSleep, Damage])
             # print (AttackArray)
@@ -480,16 +485,16 @@ class OpponentAttackThread(threading.Thread):
                                          (config['SERVER']['SERVER_HOST'], int(config['SERVER']['UDP_PORT'])))
 
                     # Send the message via UDP to Pi Fighter
-                    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as UDPSocket:
-                        UDPSocket.setblocking(False)
+                    #with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as UDPSocket:
+                    #    UDPSocket.setblocking(False)
 
-                        UDPSocket.sendto(bytes(OpponentAttackStr, "utf-8"), (
-                        config['PI_TRAINER']['PI_TRAINER'], int(config['PI_TRAINER']['PI_TRAINER_PORT'])))
-
-
+                    #   UDPSocket.sendto(bytes(OpponentAttackStr, "utf-8"), (
+                    #       config['PI_TRAINER']['PI_TRAINER'], int(config['PI_TRAINER']['PI_TRAINER_PORT'])))
 
 
-                    # print("Player's health is {}" .format(Health))
+
+
+                        # print("Player's health is {}" .format(Health))
 
                 # Calculate the average
                 AvgDelay = TotalDelays / len(AttackArray)
@@ -499,8 +504,9 @@ class OpponentAttackThread(threading.Thread):
 
 
         except:
-            print("Opponent Attack Exception")
-            raise ()
+            print("Opponent Attack Exception" , sys.exc_info()[0])
+            raise
+
         finally:
             FightOver.clear()
             exit()
@@ -520,8 +526,8 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
 
         global OpponentName
         global HealthPoints
-        global OpponentDefeated
-        global Opponent
+        global opponent_defeated
+        global opponent
 
         try:
 
@@ -532,7 +538,7 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
 
                 if len(self.data) == 0:
                     client_exception = ClientDisconnnect("Client Disconnect - killing handler")
-                    raise(client_exception)
+                    raise (client_exception)
 
                 # Decode to ASCII so it can be processed.
                 client_str = self.data.decode('ascii')
@@ -569,7 +575,7 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
 
                             for i in range(len(VirtualFighters)):
                                 if VirtualFighters[i].name == OpponentName:
-                                    Opponent = VirtualFighters[i]
+                                    opponent = VirtualFighters[i]
 
                                     print("Found Opponent", OpponentName)
 
@@ -578,14 +584,14 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
                                     break
 
                             # Setting up for the fight - setting various things back up.
-                            OpponentDefeated = False  # Set Opponent Defeated to False
+                            opponent_defeated = False  # Set Opponent Defeated to False
 
                             # Reset the opponents health - this is needed if opponent has already been used.
-                            Opponent.ResetHealth()
+                            opponent.ResetHealth()
 
-                            print("Health is {}".format(Opponent.CurrentHealth))
+                            print("Health is {}".format(opponent.CurrentHealth))
 
-                            OpponentReadyStr = "<OpponentReady>{}</OpponentReady>".format(Opponent.name)
+                            OpponentReadyStr = "<OpponentReady>{}</OpponentReady>".format(opponent.name)
 
                             self.request.sendall(bytes(OpponentReadyStr, "utf-8"))
 
@@ -600,10 +606,12 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
         except ClientDisconnnect:
             print("Client Disconnect")
 
+        except:
+
+            raise
 
 
-
-# Class to handle the TCP Comms - manages the session, etc. TCP Comms is used to set up the session only. 
+# Class to handle the TCP Comms - manages the session, etc. TCP Comms is used to set up the session only.
 # UDP is used for the fighting.  
 class TCPCommsThread(threading.Thread):
     def __init__(self, threadID, name, counter):
@@ -635,7 +643,7 @@ class TCPCommsThread(threading.Thread):
             raise
 
         finally:
-            TCPsock.close()
+            TCPsock.server_close()
             exit()
 
 
@@ -672,10 +680,11 @@ TCPCommsThread.start()
 
 try:
     while (1):
-        0
+        pass
 except:
     print("Main Function Exception")
 finally:
     print("Server is dead - long live Server")
     logging.shutdown()
     AttackLogs.close()
+
