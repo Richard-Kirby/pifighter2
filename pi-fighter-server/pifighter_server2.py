@@ -1,4 +1,7 @@
 
+import threading
+import configparser
+import fighter_manager
 
 
 class fight_manager(threading.Thread):
@@ -17,6 +20,15 @@ class fight_manager(threading.Thread):
         print(self.tcp_address)
         print(self.udp_address)
 
-        self.player_manager = PlayerManager()
+        self.player_manager = fighter_manager.PlayerManager()
+
+        self.virtual_fighter_manager = fighter_manager.VirtualFighterManager()
+
+    
+if __name__ == "__main__":
+
+    fight_mgr = fight_manager()
+    fight_mgr.player_manager.print_players()
+
 
 

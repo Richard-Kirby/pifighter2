@@ -32,17 +32,6 @@ class VirtualFighter(fighter):
         self.attack_file = attack_filename
 
 
-# Build a list of Virtual Fighters - should be put into a file.
-virtual_fighters = [
-    VirtualFighter("One Ewok", 50, 'One_Ewok_Attack_LevelOne.xml'),
-    VirtualFighter("C3-PO", 60, "C3-PO_Attack_LevelOne.xml"),
-    VirtualFighter("Early Luke SkyWalker", 75, "Early_Luke_Attack_LevelOne.xml"),
-    VirtualFighter("JarJar Binks", 100, "JarJar_Binks_Attack_LevelOne.xml"),
-    VirtualFighter("Many Ewoks", 150, "Many_Ewoks_Attack_LevelOne.xml"),
-    VirtualFighter("Jedi Luke", 200, "Jedi_Luke_Attack_LevelOne.xml"),
-    VirtualFighter("Yoda", 200, "Yoda_LevelOne.xml"),
-    VirtualFighter("Darth Vader", 300, "Darth_Vader_Attack_LevelOne.xml")
-]
 
 
 # Player Class - manages player information.  It is just a type of fighter, but gets re-gen and extra health when wins a fight.
@@ -63,6 +52,23 @@ class Player(fighter):
         self.health += reward_pts
         print("Bonus Health - Player {}'s profile now has {} health points.\n  {} started session with {} and currently has {}"
                 .format(self.name, self.health, self.name, self.initial_health, self.current_health))
+
+# Manager for the Virtual Fighters todo Need to change to file based storage like players.
+class VirtualFighterManager():
+    def __init__(self):
+        # Build a list of Virtual Fighters - todo should be put into a file.
+        self.virtual_fighters = [
+            VirtualFighter("One Ewok", 50, 'One_Ewok_Attack_LevelOne.xml'),
+            VirtualFighter("C3-PO", 60, "C3-PO_Attack_LevelOne.xml"),
+            VirtualFighter("Early Luke SkyWalker", 75, "Early_Luke_Attack_LevelOne.xml"),
+            VirtualFighter("JarJar Binks", 100, "JarJar_Binks_Attack_LevelOne.xml"),
+            VirtualFighter("Many Ewoks", 150, "Many_Ewoks_Attack_LevelOne.xml"),
+            VirtualFighter("Jedi Luke", 200, "Jedi_Luke_Attack_LevelOne.xml"),
+            VirtualFighter("Yoda", 200, "Yoda_LevelOne.xml"),
+            VirtualFighter("Darth Vader", 300, "Darth_Vader_Attack_LevelOne.xml")
+        ]
+
+
 
 
 class PlayerManager():
