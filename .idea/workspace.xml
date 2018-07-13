@@ -169,9 +169,11 @@
       <file leaf-file-name="pi-fighter-server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="115">
+              <caret line="375" column="19" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="512" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,7 +181,7 @@
       <file leaf-file-name="fighter_manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pi-fighter-server/fighter_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1472">
+            <state relative-caret-position="2596">
               <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding />
             </state>
@@ -189,9 +191,11 @@
       <file leaf-file-name="pifighter_server2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="198">
+              <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -199,8 +203,8 @@
       <file leaf-file-name="session_manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/session_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3894">
-              <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+            <state relative-caret-position="207">
+              <caret line="162" column="54" lean-forward="true" selection-start-line="162" selection-start-column="54" selection-end-line="162" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -209,8 +213,8 @@
       <file leaf-file-name="server_communicator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server_communicator/server_communicator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="41" column="57" lean-forward="false" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
+            <state relative-caret-position="427">
+              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -237,7 +241,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wel</find>
       <find>print</find>
       <find>workout</find>
       <find>opponent_list_setup</find>
@@ -266,6 +269,7 @@
       <find>loggin</find>
       <find>config</find>
       <find>Ele</find>
+      <find>listen</find>
       <find>client</find>
     </findStrings>
   </component>
@@ -289,12 +293,12 @@
         <option value="W:/Raspberry-Pi-Gym/pi-fighter-server/pi-fighter-server.py" />
         <option value="$PROJECT_DIR$/accel/accel.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/server_communicator/server_communicator.py" />
-        <option value="$PROJECT_DIR$/session_manager.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py" />
         <option value="$PROJECT_DIR$/server_communicator/udp_server.py" />
         <option value="$PROJECT_DIR$/server_communicator/udp_client.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" />
+        <option value="$PROJECT_DIR$/session_manager.py" />
+        <option value="$PROJECT_DIR$/server_communicator/server_communicator.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py" />
       </list>
     </option>
@@ -327,6 +331,11 @@
             <path>
               <item name="pifighter2" type="b2602c69:ProjectViewProjectNode" />
               <item name="pifighter2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pifighter2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pifighter2" type="462c0819:PsiDirectoryNode" />
+              <item name="server_communicator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -701,13 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_communicator/server_communicator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="41" column="57" lean-forward="false" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -716,14 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/session_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3894">
-          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -746,27 +740,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pi-fighter-server/fighter_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1472">
+        <state relative-caret-position="2596">
           <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/session_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="162" column="54" lean-forward="true" selection-start-line="162" selection-start-column="54" selection-end-line="162" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_communicator/server_communicator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="375" column="19" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="512" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="198">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

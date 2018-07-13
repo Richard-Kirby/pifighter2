@@ -193,8 +193,7 @@ class Session(Event, threading.Thread):
         selected_opp_str = "<SelectedOpponent>{}</SelectedOpponent>".format(opponent)
         print(selected_opp_str)
         self.tcp_send_q.put_nowait(selected_opp_str)
-        time.sleep(1)
-        self.udp_send_q.put_nowait(selected_opp_str)
+
 
 
     def close_session(self):
