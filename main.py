@@ -14,7 +14,6 @@ import server_communicator.server_communicator as server_comm
 # Main application
 class Application(tk.Frame, threading.Thread):
     players = ["Richard Kirby", "Joh Kirby", "GUEST"]
-    opponents = ["Darth", "Yoda", "Others"]
 
     # Set up the basic GUI elements
     def __init__(self, master=None):
@@ -62,9 +61,12 @@ class Application(tk.Frame, threading.Thread):
         self.player_list = tk.Listbox(self, font=pi_fighter_font, width=pi_fighter_width, selectmode=tk.SINGLE,
                                       exportselection=0)
         # Create select box of players
-        for player in self.players:
-            self.player_list.insert(tk.END, player)
+        #for player in self.players:
+        #    self.player_list.insert(tk.END, player)
+
+        self.player_list_setup()
         self.player_list.pack(side="top")
+
 
         # Select first player
         self.player_list.select_set(0)  # This only sets focus on the first item.
@@ -106,8 +108,10 @@ class Application(tk.Frame, threading.Thread):
                               command=self.master.destroy)
         self.quit.pack(side="bottom")
 
+        self.session = None
 
-    # Start workout
+
+        # Start workout
     def start_workout(self):
         print("Start workout")
         self.session.close_session()
@@ -131,8 +135,20 @@ class Application(tk.Frame, threading.Thread):
                 # Put the data into an XML Element Tree
                 server_element = et.fromstring(server_str)
 
+                # Set up player list received from the Server
+                if server_element.tag == 'PlayerList':
+                    for child in server_element:
+                        # print (Child.tag + Child.text)
+                        if child.tag == 'Player':
+                            player_info = child.text
+                            print(player_info)
+                            self.players.append(player_info)
 
-                if server_element.tag == 'OpponentList':
+                    for player in self.players:
+                        self.player_list.insert(tk.END, player)
+
+                # Set up Opponent list received from Server
+                elif server_element.tag == 'OpponentList':
                     for child in server_element:
                         # print (Child.tag + Child.text)
                         if child.tag == 'Opponent':
@@ -160,8 +176,23 @@ class Application(tk.Frame, threading.Thread):
                 # Put the data into an XML Element Tree
                 server_element = et.fromstring(server_str)
 
-                if server_element.tag == 'Attack':
-                    print("Attack ", server_str)
+                if server_element.tag == 'OpponentAttack':
+                    print("OpponentAttack ", server_str)
+                    damage = float(server_element.text)
+                    print("Damage {}" .format(damage))
+                    self.session.opponent_attack_q.put_nowait(damage)
+
+                elif server_element.tag == 'FightState':
+
+                    for child in server_element:
+                        if child.tag == 'PlayerHealth':
+                            self.session.pix_display.set_player_health(float(child.text)/300 * 100)
+                        elif child.tag == 'OpponentHealth':
+                            self.session.pix_display.set_opponent_health(float(child.text)/300 * 100)
+                        else:
+                            print (child.tag)
+
+
                 else:
                     print("Unable to Decode ",server_str)
 
@@ -170,24 +201,32 @@ class Application(tk.Frame, threading.Thread):
         # Check for a new list once in a while from the server.
         #root.after(15000000000000000000, self.opponent_list_setup())
 
+    # Requesting Player List.
+    def player_list_setup(self):
+        # Get list of Opponents
+        self.players = []
+        self.tcp_send_q.put_nowait("<PlayerList></PlayerList>")
+        print("Put player List Request into TCP Queue")
 
-
+    # Requesting Opponent List.
     def opponent_list_setup(self):
         # Get list of Opponents
         self.opponents = []
         self.tcp_send_q.put_nowait("<OpponentList></OpponentList>")
         print("Put Opponent List Request into TCP Queue")
 
-
     # Set Player.
     def player_select(self):
         player_index = int(self.player_list.curselection()[0])
+        player = self.players[player_index]
         self.player.set(self.players[player_index])
-        print(self.player.get())
+        player_sel_str = "<SelectedPlayer>{}</SelectedPlayer>" .format(player)
+
+        # Send selected player to the Server
+        self.tcp_send_q.put_nowait(player_sel_str)
 
         # Set up a session for this player.
         self.session = session_mgr.Session(self.player.get(), self.tcp_send_q, self.tcp_rec_q, self.udp_send_q, self.udp_rec_q)
-
         self.session.start()
 
     # Set opponent

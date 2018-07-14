@@ -127,6 +127,8 @@ class Session(Event, threading.Thread):
         self.pix_display = pix_display.PixelDisplay()
         self.pix_display.welcome_message(self.player)
 
+        self.pix_display.set_up_player_health(16)
+        self.pix_display.set_up_opponent_health(16)
 
         self.player_attack_q = queue.Queue()
         self.opponent_attack_q = queue.Queue()

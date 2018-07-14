@@ -94,6 +94,20 @@ class PlayerManager():
 
         print("Found {} Players" .format(len(self.all_players)))
 
+    # Find and return the player that is being searched.
+    def get_player(self, name):
+
+        player = None
+
+        # Search through to get the player name
+        for candidate in self.all_players:
+            if candidate.name == name:
+                player = candidate
+
+        # return the player object - may be None if not successful
+        return player
+
+
     # Updates the player's information in the XML tree.
     def update_player_xml(self, player):
         # Go through the players looking for the player in question.

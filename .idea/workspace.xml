@@ -5,135 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b98157e7-a11b-45ba-8dd5-f32487bf34f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pifighter2.iml" afterPath="$PROJECT_DIR$/.idea/pifighter2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accel/__init__.py" afterPath="$PROJECT_DIR$/accel/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accel/accel.py" afterPath="$PROJECT_DIR$/accel/accel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event.py" afterPath="$PROJECT_DIR$/event.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gui/__init__.py" afterPath="$PROJECT_DIR$/gui/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gui/gui.py" afterPath="$PROJECT_DIR$/gui/gui.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/C3-PO_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/C3-PO_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Darth_Vader_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Darth_Vader_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Early_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Early_Luke_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/JarJar_Binks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/JarJar_Binks_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Jedi_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Jedi_Luke_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Many_Ewoks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Many_Ewoks_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/One_Ewok_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/One_Ewok_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/README.md" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Yoda_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Yoda_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/C3-PO_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/C3-PO_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Darth_Vader_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Darth_Vader_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Early_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Early_Luke_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/JarJar_Binks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/JarJar_Binks_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Jedi_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Jedi_Luke_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Many_Ewoks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Many_Ewoks_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/One_Ewok_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/One_Ewok_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/README.md" afterPath="$PROJECT_DIR$/pi-fighter-server/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Yoda_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Yoda_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/attack_only_stub.py" afterPath="$PROJECT_DIR$/pi-fighter-server/attack_only_stub.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" afterPath="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011530.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011530.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011542.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011542.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011543.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011543.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011544.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011544.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011545.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011545.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011547.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011547.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011548.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011548.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011555.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011555.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011603.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011603.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011608.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011608.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011611.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011611.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011636.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011636.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011637.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011637.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011639.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011639.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011640.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011640.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011642.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011642.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011647.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011647.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011650.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011650.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011653.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011653.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011655.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011655.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011656.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011656.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011716.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011716.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011913.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011913.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011931.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011931.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011933.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011933.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011934.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011934.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011935.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011935.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011939.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011939.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011953.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011953.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011955.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011955.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011956.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011956.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012001.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012001.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012002.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012002.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012006.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012006.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012010.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012010.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012017.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012017.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012020.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012020.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012051.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012051.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020812.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020812.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020816.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020816.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020847.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020847.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020848.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020848.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020856.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020856.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020902.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020902.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020904.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020904.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020929.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020929.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020933.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020933.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020937.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020937.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020939.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020939.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020946.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020946.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020947.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020947.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020951.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020951.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020956.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020956.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020959.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020959.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021006.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021006.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021012.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021012.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021045.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021045.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021046.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021046.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021049.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021049.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021056.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021056.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021057.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021057.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021207.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021207.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021221.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021221.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021222.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021222.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021223.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021223.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021236.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021236.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021244.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021244.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021247.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021247.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021310.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021310.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021314.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021314.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021547.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021547.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021549.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021549.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021625.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021625.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021627.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021627.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021629.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021629.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021651.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021651.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021702.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021702.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021703.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021703.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021707.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021707.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021822.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021822.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021826.log" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021826.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.cfg" afterPath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py" afterPath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-users.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-users.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py" afterPath="$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter.cfg" afterPath="$PROJECT_DIR$/pi-fighter.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pifighter2.cfg" afterPath="$PROJECT_DIR$/pifighter2.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/__init__.py" afterPath="$PROJECT_DIR$/pixel_display/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/bar_indicator.py" afterPath="$PROJECT_DIR$/pixel_display/bar_indicator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/pixel_display.py" afterPath="$PROJECT_DIR$/pixel_display/pixel_display.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/text_handler.py" afterPath="$PROJECT_DIR$/pixel_display/text_handler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/__init__.py" afterPath="$PROJECT_DIR$/server_communicator/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/server_communicator.py" afterPath="$PROJECT_DIR$/server_communicator/server_communicator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/udp_client.py" afterPath="$PROJECT_DIR$/server_communicator/udp_client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/udp_server.py" afterPath="$PROJECT_DIR$/server_communicator/udp_server.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/session_manager.py" afterPath="$PROJECT_DIR$/session_manager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats.py" afterPath="$PROJECT_DIR$/stats.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tester.py" afterPath="$PROJECT_DIR$/tester.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -144,55 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="udp_client.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_communicator/udp_client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pi-fighter-server.cfg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.cfg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pi-fighter-server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="375" column="19" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="512" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fighter_manager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pi-fighter-server/fighter_manager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2596">
-              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pifighter_server2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="233">
+              <caret line="357" column="64" lean-forward="false" selection-start-line="357" selection-start-column="64" selection-end-line="357" selection-end-column="64" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -200,11 +32,51 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pi-fighter-server.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="242" column="56" lean-forward="false" selection-start-line="242" selection-start-column="28" selection-end-line="242" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fighter_manager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pi-fighter-server/fighter_manager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1628">
+              <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="session_manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/session_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="162" column="54" lean-forward="true" selection-start-line="162" selection-start-column="54" selection-end-line="162" selection-end-column="54" />
+            <state relative-caret-position="198">
+              <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="220" column="43" lean-forward="true" selection-start-line="220" selection-start-column="43" selection-end-line="220" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pixel_display.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pixel_display/pixel_display.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -213,18 +85,8 @@
       <file leaf-file-name="server_communicator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server_communicator/server_communicator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="udp_server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_communicator/udp_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            <state relative-caret-position="449">
+              <caret line="47" column="63" lean-forward="false" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -241,17 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>print</find>
-      <find>workout</find>
-      <find>opponent_list_setup</find>
-      <find>setup_fight</find>
-      <find>session</find>
-      <find>q</find>
-      <find>player_attack</find>
-      <find>not</find>
-      <find>attack</find>
-      <find>PiAdd</find>
-      <find>PiAddress</find>
       <find>SendOpponentInfo</find>
       <find>piAdd</find>
       <find>opponentattack</find>
@@ -263,7 +114,6 @@
       <find>client_address</find>
       <find>SelectedOpponent</find>
       <find>self.socket</find>
-      <find>opp</find>
       <find>MyTCPHandler</find>
       <find>AllPlayers</find>
       <find>loggin</find>
@@ -271,6 +121,18 @@
       <find>Ele</find>
       <find>listen</find>
       <find>client</find>
+      <find>player</find>
+      <find>server</find>
+      <find>self.fight</find>
+      <find>process_attack</find>
+      <find>pix_</find>
+      <find>pix_dis</find>
+      <find>fight not</find>
+      <find>opp</find>
+      <find>selected</find>
+      <find>create</find>
+      <find>create_fight_state</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -292,13 +154,13 @@
         <option value="$PROJECT_DIR$/stats.py" />
         <option value="W:/Raspberry-Pi-Gym/pi-fighter-server/pi-fighter-server.py" />
         <option value="$PROJECT_DIR$/accel/accel.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py" />
         <option value="$PROJECT_DIR$/server_communicator/udp_server.py" />
         <option value="$PROJECT_DIR$/server_communicator/udp_client.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" />
-        <option value="$PROJECT_DIR$/session_manager.py" />
         <option value="$PROJECT_DIR$/server_communicator/server_communicator.py" />
+        <option value="$PROJECT_DIR$/session_manager.py" />
+        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py" />
       </list>
     </option>
@@ -404,9 +266,9 @@
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12948062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12948062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32904884" sideWeight="0.5025604" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5025604" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -441,13 +303,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://W:/Raspberry-Pi-Gym/pi-fighter/pifighterstrip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://W:/Raspberry-Pi-Gym/pi-fighter/pifightermatrix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -649,13 +504,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/session_manager/session_manager.py" />
-    <entry file="file://$PROJECT_DIR$/pixel_display/pixel_display.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stats.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -706,14 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_communicator/udp_server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -732,52 +572,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server_communicator/udp_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="0">
           <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pi-fighter-server/fighter_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2596">
-          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/session_manager.py">
+    <entry file="file://$PROJECT_DIR$/event.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="162" column="54" lean-forward="true" selection-start-line="162" selection-start-column="54" selection-end-line="162" selection-end-column="54" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixel_display/pixel_display.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server_communicator/server_communicator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        <state relative-caret-position="449">
+          <caret line="47" column="63" lean-forward="false" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="375" column="19" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="512" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="163">
+          <caret line="242" column="56" lean-forward="false" selection-start-line="242" selection-start-column="28" selection-end-line="242" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="220" column="43" lean-forward="true" selection-start-line="220" selection-start-column="43" selection-end-line="220" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi-fighter-server/fighter_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1628">
+          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        <state relative-caret-position="233">
+          <caret line="357" column="64" lean-forward="false" selection-start-line="357" selection-start-column="64" selection-end-line="357" selection-end-column="64" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
