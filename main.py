@@ -13,7 +13,6 @@ import server_communicator.server_communicator as server_comm
 
 # Main application
 class Application(tk.Frame, threading.Thread):
-    players = ["Richard Kirby", "Joh Kirby", "GUEST"]
 
     # Set up the basic GUI elements
     def __init__(self, master=None):
@@ -161,6 +160,7 @@ class Application(tk.Frame, threading.Thread):
 
                 elif server_element.tag == 'OpponentReady':
                     print("** Opponent Ready", server_element.text)
+                    self.session.pix_display.text_message("Go!")
                     self.session.fight.start_fight()
 
             if not self.udp_rec_q.empty():
@@ -179,7 +179,7 @@ class Application(tk.Frame, threading.Thread):
                 if server_element.tag == 'OpponentAttack':
                     print("OpponentAttack ", server_str)
                     damage = float(server_element.text)
-                    print("Damage {}" .format(damage))
+                    #print("Damage {}" .format(damage))
                     self.session.opponent_attack_q.put_nowait(damage)
 
                 elif server_element.tag == 'FightState':
@@ -189,7 +189,22 @@ class Application(tk.Frame, threading.Thread):
                             self.session.pix_display.set_player_health(float(child.text)/300 * 100)
                         elif child.tag == 'OpponentHealth':
                             self.session.pix_display.set_opponent_health(float(child.text)/300 * 100)
-                        else:
+                        elif child.tag == 'FightWinner':
+                            print(child.text)
+                            if child.text != 'None':
+                                # print(child.text, self.player_name)
+                                if child.text == self.player_name and winner_text != 'announced':
+                                    winner_text = "You beat {}. " .format(self.opponent)
+
+                                else:
+                                    winner_text = "{} beat you. " .format(self.opponent)
+
+                                self.session.pix_display.text_message(winner_text)
+                                winner_text = "announced"
+                            else:
+                                winner_text = "None"
+
+                        else: # todo Need to process other information as well.
                             print (child.tag)
 
 
@@ -221,6 +236,7 @@ class Application(tk.Frame, threading.Thread):
         player = self.players[player_index]
         self.player.set(self.players[player_index])
         player_sel_str = "<SelectedPlayer>{}</SelectedPlayer>" .format(player)
+        self.player_name = self.players[player_index]
 
         # Send selected player to the Server
         self.tcp_send_q.put_nowait(player_sel_str)

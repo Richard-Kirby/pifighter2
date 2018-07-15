@@ -315,6 +315,16 @@ class PlayerSessionManager(threading.Thread):
                                         self.opponent_attack_thread.start()
                                         self.fight = Fight(self.player, self.opponent)
 
+
+                                        # Reset the opponents health - this is needed if opponent has already been used.
+                                        self.opponent.reset_health()
+
+                                        print("Health is {}".format(self.opponent.current_health))
+
+                                        opponent_ready_str = "<OpponentReady>{}</OpponentReady>".format(self.opponent.name)
+
+                                        self.tcp_client_socket.sendall(bytes(opponent_ready_str, "utf-8"))
+
                             else:
                                 print("Don't know how to process this one {}" .format(client_str))
                         except:
@@ -350,6 +360,19 @@ class PlayerSessionManager(threading.Thread):
                             if self.fight.fight_over and self.opponent_attack_thread is not None:
                                 self.opponent_attack_thread.fight_ongoing_event.clear()
                                 self.opponent_attack_thread.join()
+                                self.opponent_attack_thread = None
+
+                                # if player won, regenerate some of player's health
+                                #print("$$ ", self.fight.winner, self.player.name)
+                                if self.fight.winner == self.player.name:
+                                    # Regen some of players health.
+                                    self.player.regen(50)
+
+                                    # Reward player with 2% of the opponents health points
+                                    self.player.reward_health_point(0.02 * self.opponent.initial_health)
+
+                                self.fight = None
+
 
                                 #print("Opponent Attack Thread ", self.opponent_attack_thread)
 
@@ -374,8 +397,8 @@ class PlayerSessionManager(threading.Thread):
                             # Send the message via UDP to the pi fighter client
                             with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_socket:
                                 udp_socket.sendto(opponent_data, self.client_udp_address)
-                                udp_socket.sendto(self.fight.create_fight_state_string(),self.client_udp_address)
                                 self.fight.process_attack(self.player, damage)
+                                udp_socket.sendto(self.fight.create_fight_state_string(),self.client_udp_address)
 
                             # Clearing up at the end of a fight
                             if self.fight.fight_over and self.opponent_attack_thread is not None:

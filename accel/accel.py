@@ -72,7 +72,10 @@ class Accelerometer(threading.Thread):
             self.scaled_accel = [0, 0, 0]
 
         # Scaling is 16g, so scale the 2 bytes to get the +/-16g
-        self.total_accel = math.sqrt(self.scaled_accel[0] ** 2 + self.scaled_accel[1] ** 2 + self.scaled_accel[2] ** 2)
+        # Take the square root of the squared sums to get the total acceleration.  Use the sign of the
+        # Z component.
+        self.total_accel = math.copysign(math.sqrt(self.scaled_accel[0] ** 2 + self.scaled_accel[1] ** 2 + self.scaled_accel[2] ** 2),
+                                         self.scaled_accel[2])
 
         # Let the deque build up to full length before doing calculations.
         if self.recent_reads.__len__() == self.cycle_num:

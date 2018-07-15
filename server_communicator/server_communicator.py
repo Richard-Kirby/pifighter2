@@ -18,7 +18,7 @@ class UDPCommsThread(threading.Thread):
         self.udp_send_queue = udp_send_queue
         self.udp_rec_queue = udp_rec_queue
 
-        print("init thread")
+        #print("init thread")
 
 
     def run(self):
@@ -37,7 +37,7 @@ class UDPCommsThread(threading.Thread):
 
                         numbytes = udp_socket.sendto(bytes(udp_send_str, "utf-8"), (self.server_address, self.udp_port))
 
-                        print("Sent UDP message to Server {}, bytes{} to {} {}" .format(udp_send_str, numbytes, self.server_address, self.udp_port))
+                        #print("Sent UDP message to Server {}, bytes{} to {} {}" .format(udp_send_str, numbytes, self.server_address, self.udp_port))
 
                     # Receiving data - prevents blocking.
                     input_sock, output_sock, exception_sock = select.select([udp_socket], [],[udp_socket],0.25)
@@ -46,7 +46,7 @@ class UDPCommsThread(threading.Thread):
                     for comm_socket in input_sock:
                         if comm_socket is udp_socket:
                             udp_rec_str = udp_socket.recv(1024)
-                            print("%%% udp_rec_str ", udp_rec_str)
+                            #print("%%% udp_rec_str ", udp_rec_str)
 
                             # Change the below to a receive Queue later.
                             self.udp_rec_queue.put_nowait(udp_rec_str)
@@ -87,14 +87,13 @@ class TCPCommsThread(threading.Thread):
                     #tcp_socket.setblocking(0)
 
                     # Connect to server and send data
-                    print(self.server_address, self.tcp_port)
+                    #print(self.server_address, self.tcp_port)
                     tcp_socket.connect((self.server_address, self.tcp_port))
 
-                    print("Connected to Server")
+                    print("Connected to Server ", self.server_address, self.tcp_port )
 
-                    while 1:
+                    while True:
                         try:
-
                             # send anything out that needs to be sent.
                             if not self.tcp_send_queue.empty():
                                 tcp_str = str(self.tcp_send_queue.get_nowait())
@@ -117,7 +116,7 @@ class TCPCommsThread(threading.Thread):
 
                                         tcp_rec_str = tcp_socket.recv(1024)
                                         if len(tcp_rec_str)>0:
-                                            print(tcp_rec_str)
+                                            #print(tcp_rec_str)
                                             self.tcp_rec_queue.put_nowait(tcp_rec_str)
                         except:
                             raise()
@@ -174,8 +173,8 @@ if __name__ == "__main__":
         def handle(self):
             # self.request is the TCP socket connected to the client
             self.data = self.request.recv(1024).strip()
-            print("{} wrote:".format(self.client_address[0]))
-            print(self.data)
+            #print("{} wrote:".format(self.client_address[0]))
+            #print(self.data)
             # just send back the same data, but upper-cased
             self.request.sendall(self.data.upper())
 
@@ -203,7 +202,7 @@ if __name__ == "__main__":
     server_comm = server_communicator("127.0.0.1", 9999, uq_send, uq_rec, 9998, tq_send, tq_rec )
 
     time.sleep(5)
-    print("checking out the queue")
+    #print("checking out the queue")
     while uq_rec.empty() is False:
         print(uq_rec.get_nowait())
 
