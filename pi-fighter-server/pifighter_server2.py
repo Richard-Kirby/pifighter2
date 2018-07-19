@@ -410,11 +410,12 @@ class PlayerSessionManager(threading.Thread):
         except ClientDisconnnect:
             print("Client Disconnect")
 
-        except:
 
+        except:
             raise
 
         finally:
+            print("Clearing up ")
             self.tcp_client_socket.close()
             self.player_udp_socket.close()
 
@@ -452,7 +453,9 @@ class FighterManager(threading.Thread):
             # create an INET, STREAMing socket
             serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-            # bind the socket to a public host, and a well-known port
+            serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+            # bind the socket to a public host
             serversocket.bind(self.tcp_address)
 
             # become a server socket
@@ -476,6 +479,8 @@ class FighterManager(threading.Thread):
         finally:
             serversocket.shutdown(socket.SHUT_RDWR)
             serversocket.close()
+            clientsocket.shutdown(socket.SHUT_RDWR)
+            clientsocket.close()
 
 
 

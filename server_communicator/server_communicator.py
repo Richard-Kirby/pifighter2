@@ -127,7 +127,6 @@ class TCPCommsThread(threading.Thread):
                 time.sleep(15)
 
 
-
 # This class communicates with the pifighter server for the various comms, both UDP and TCP.
 class ServerCommunicator:
 
@@ -142,9 +141,10 @@ class ServerCommunicator:
 
         self.udp_comms_thread = UDPCommsThread(server_address, udp_server_port, udp_send_queue, udp_rec_queue)
 
-        # Start the 2 threads to deal with the Comms - UDP for attacks, skips, etc.  TCP is used for managing session, etc.
+        # Start the 2 threads to deal with the Comms - UDP for attacks, skips, etc.
+        # TCP is used for managing session, etc.
         # Both threads are set up a Daemon threads, so they will be killed when the main thread exits.
-        #self.udp_comms_thread.setDaemon(True)
+        # self.udp_comms_thread.setDaemon(True)
         self.udp_comms_thread.start()
 
         self.tcp_comms_thread = TCPCommsThread(server_address, tcp_server_port, tcp_send_queue, tcp_rec_queue)
