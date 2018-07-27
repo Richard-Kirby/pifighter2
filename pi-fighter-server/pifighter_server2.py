@@ -6,27 +6,25 @@ import datetime
 import time
 import sys
 import xml.etree.ElementTree as ElementTree
+import logging
 
 import fighter_manager
 
+# Exception for a Client Disconnection.
 class ClientDisconnnect(Exception):
     def __init__(self, message):
         self.message = message
 
-        def SetUpLogging():
-            global logging
-            global AttackLogs
 
-            # Setting up logging - add in time to it. Create a filename using time functions
-            Now = datetime.datetime.now()
-            LogFileName = 'log/pi-fighter-server-' + Now.strftime("%y%m%d%H%M") + ".log"
+# Set up logging.
+def SetUpLogging():
 
-            # Sets up the logging - no special settings.
-            logging.basicConfig(filename=LogFileName, level=logging.DEBUG)
+    # Setting up logging - add in time to it. Create a filename using time functions
+    Now = datetime.datetime.now()
+    LogFileName = 'log/pifighter_server_' + Now.strftime("%y%m%d%H%M") + ".log"
 
-            # Set up file for capturing Attacks only.
-            AttackLogFile = 'log/pi-fighter-server-attacks' + Now.strftime("%y%m%d%H%M") + ".log"
-            AttackLogs = open(AttackLogFile, "w")
+    # Sets up the logging - no special settings.
+    logging.basicConfig(filename=LogFileName, level=logging.DEBUG)
 
 
 # Class to handle the Opponent Attacks.  Reads the designated file to attack the user.
@@ -141,6 +139,7 @@ class OpponentAttackThread(threading.Thread):
         finally:
             exit()
 
+# Class handles the fights.
 class Fight:
 
     def __init__(self, player, opponent):
@@ -226,14 +225,40 @@ class PlayerSessionManager(threading.Thread):
         self.client_udp_address = None
         self.opponent = None
 
+        self.fight_log_file = None
+
+    # Function to mark start of fight
+    def write_fight_start(self):
+        self.fight_log_file.write("<Fight>\n")
+
+    # Function to mark start of fight
+    def write_fight_end(self):
+        self.fight_log_file.write("</Fight>\n")
+
+    # Function to write a log file string - includes some time information.
+    def write_fight_log_item(self, str_to_log):
+        if self.fight_log_file is not None:
+
+            fight_log_line = ElementTree.Element("FightLog")
+            log_time = ElementTree.SubElement(fight_log_line, "Time")
+            log_time.text = str(time.time())
+
+            log_str = ElementTree.SubElement(fight_log_line, "LogStr")
+            log_str.text = str(str_to_log)
+
+            fight_log_line_str = ElementTree.tostring(fight_log_line).decode()
+
+            self.fight_log_file.write(fight_log_line_str + '\n')
+            self.fight_log_file.flush()
+
+        else:
+            print("Log File is None")
+
+
+    # Main function to run the thread.
     def run(self):
 
         print("PlayerSessionManager threading run")
-
-        # Set player here - todo Need to update later to allow a choice.
-        self.player = self.player_mgr.get_player("Richard Kirby")
-
-        print(self.player)
 
         try:
 
@@ -245,17 +270,14 @@ class PlayerSessionManager(threading.Thread):
                 if self.tcp_client_socket in read_sock:
 
                     # self.request is the TCP socket connected to the client
-                    data = self.tcp_client_socket.recv(1024).strip()
+                    client_str = self.tcp_client_socket.recv(1024).strip().decode()
 
-                    if len(data) == 0:
+                    if len(client_str) == 0:
                         client_exception = ClientDisconnnect("Client Disconnect - killing handler")
                         raise (client_exception)
 
-                    # Decode to ASCII so it can be processed.
-                    client_str = data.decode('ascii')
-
                     # Process the string if length is not equal to 0.
-                    if (len(client_str) != 0):
+                    if len(client_str) != 0:
 
                         # Put the data into an XML Element Tree
                         try:
@@ -297,7 +319,16 @@ class PlayerSessionManager(threading.Thread):
 
                                         print("Found Player {} with {} Health Points" .format(self.player.name, self.player.health))
 
-                            # If Client has selected an Opponent, then set the opponent to the one selected.
+                                        # if fight log is already open - close it to allow a new file.
+                                        if self.fight_log_file is not None:
+                                            self.fight_log_file.close()
+
+                                        # Setting up logging - add in time to it. Create a filename using time functions
+                                        self.fight_log_file = open('log/pifighter_server_fight_log_'
+                                                                   + time.strftime("%y%m%d%H%M", time.localtime()) + self.player.name + ".xml", 'wt')
+                                        self.write_fight_log_item(client_str)
+
+                                    # If Client has selected an Opponent, then set the opponent to the one selected.
                             elif client_element.tag == 'SelectedOpponent':
                                 opponent_name = client_element.text
 
@@ -321,6 +352,11 @@ class PlayerSessionManager(threading.Thread):
 
                                         print("Health is {}".format(self.opponent.current_health))
 
+                                        self.write_fight_start()
+
+                                        # Write Opponent to the fight log file.
+                                        self.write_fight_log_item(client_str)
+
                                         opponent_ready_str = "<OpponentReady>{}</OpponentReady>".format(self.opponent.name)
 
                                         self.tcp_client_socket.sendall(bytes(opponent_ready_str, "utf-8"))
@@ -337,6 +373,8 @@ class PlayerSessionManager(threading.Thread):
                     pifighter_data, self.client_udp_address = self.player_udp_socket.recvfrom(4096)
                     #print("udp message {} from {}", self.client_udp_address, pifighter_data)
 
+                    # todo Add in logging of player attack
+
 
                     # Make sure a fight is set up
                     if self.opponent_attack_thread is not None and self.fight is not None:
@@ -351,16 +389,27 @@ class PlayerSessionManager(threading.Thread):
                             damage = float(pifighter_msg.text)
                             self.fight.process_attack(self.opponent, damage)
 
+                            # Write Attack to the fight log file.
+                            self.write_fight_log_item(pifighter_data.decode())
+
                             with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_socket:
 
+                                fight_state_str = self.fight.create_fight_state_string()
+
                                 if self.fight is not None:
-                                    udp_socket.sendto(self.fight.create_fight_state_string(),self.client_udp_address)
+                                    # Write Attack to the fight log file.
+                                    self.write_fight_log_item(fight_state_str.decode())
 
+                                    udp_socket.sendto(fight_state_str, self.client_udp_address)
 
+                            # Dealing with the end of the fight.
                             if self.fight.fight_over and self.opponent_attack_thread is not None:
                                 self.opponent_attack_thread.fight_ongoing_event.clear()
                                 self.opponent_attack_thread.join()
                                 self.opponent_attack_thread = None
+
+                                # Close off the XML fight
+                                self.write_fight_end()
 
                                 # if player won, regenerate some of player's health
                                 #print("$$ ", self.fight.winner, self.player.name)
@@ -385,11 +434,16 @@ class PlayerSessionManager(threading.Thread):
                     # get the data
                     opponent_data, address = self.opponent_udp_socket.recvfrom(4096)
 
+                    # todo Add in logging of opponent attack
+
                     # Process the UDP string
                     msg = ElementTree.fromstring(opponent_data)
 
                     # Deal with Opponent Attack.
                     if msg.tag == 'OpponentAttack':
+
+                        self.write_fight_log_item(opponent_data.decode())
+
                         damage = float(msg.text)
 
                         if self.fight is not None:
@@ -398,10 +452,15 @@ class PlayerSessionManager(threading.Thread):
                             with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_socket:
                                 udp_socket.sendto(opponent_data, self.client_udp_address)
                                 self.fight.process_attack(self.player, damage)
-                                udp_socket.sendto(self.fight.create_fight_state_string(),self.client_udp_address)
+
+                                fight_state_str = self.fight.create_fight_state_string()
+                                udp_socket.sendto(fight_state_str,self.client_udp_address)
+
+                                self.write_fight_log_item(fight_state_str.decode())
 
                             # Clearing up at the end of a fight
                             if self.fight.fight_over and self.opponent_attack_thread is not None:
+
                                 self.opponent_attack_thread.fight_ongoing_event.clear()
                                 self.opponent_attack_thread.join()
                                 self.opponent_attack_thread = None
@@ -418,6 +477,10 @@ class PlayerSessionManager(threading.Thread):
             print("Clearing up ")
             self.tcp_client_socket.close()
             self.player_udp_socket.close()
+
+            print("Flushing and closing log file {}".format(self.fight_log_file.name))
+            self.fight_log_file.flush() # final write.
+            self.fight_log_file.close() # close file
 
 # Class to manage Fighers
 class FighterManager(threading.Thread):
@@ -444,7 +507,7 @@ class FighterManager(threading.Thread):
 
         # Set up TCP Server - creates a new thread for each new connection.
 
-
+    # Processing function
     def run(self):
 
         try:
@@ -466,11 +529,11 @@ class FighterManager(threading.Thread):
                 (clientsocket, address) = serversocket.accept()
 
                 # Set up a session manager
-                Session_Manager = PlayerSessionManager(clientsocket, self.player_manager, self.virtual_fighter_manager,
+                session_manager = PlayerSessionManager(clientsocket, self.player_manager, self.virtual_fighter_manager,
                                                        self.udp_address)
 
                 # Start the session manager thread.
-                Session_Manager.start()
+                session_manager.start()
 
         except:
 

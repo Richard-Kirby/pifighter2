@@ -76,7 +76,7 @@ class TCPCommsThread(threading.Thread):
     def run(self):
 
 
-        while (1):
+        while True:
 
             # Try to set up a connection and send what is in the queue
             try:
@@ -92,38 +92,34 @@ class TCPCommsThread(threading.Thread):
 
                     print("Connected to Server ", self.server_address, self.tcp_port )
 
+                    tcp_str = None
+
                     while True:
-                        try:
-                            # send anything out that needs to be sent.
-                            if not self.tcp_send_queue.empty():
-                                tcp_str = str(self.tcp_send_queue.get_nowait())
-                                tcp_socket.sendall(bytes(tcp_str + "\n", "utf-8"))
+                        # Send anything out that needs to be sent - includes any retry.
+                        if not self.tcp_send_queue.empty() and tcp_str is None:
+                            tcp_str = str(self.tcp_send_queue.get_nowait())
 
-                            input_sock =[]
+                        # if something to send from the Queue or a retry, try sending it.
+                        if tcp_str is not None:
+                            tcp_socket.sendall(bytes(tcp_str + "\n", "utf-8"))
+                            tcp_str = None
 
-                            # Wait a short period of time for anything on TCP Socket.
-                            input_sock, output_sock, exception_sock = select.select([tcp_socket], [], [tcp_socket], 2)
+                        # Wait a short period of time for anything on TCP Socket.
+                        input_sock, output_sock, exception_sock = select.select([tcp_socket], [], [tcp_socket], 2)
 
-                            # Go through sockets that got input
-                            if len(input_sock) > 0:
-
-                                # print(len(input_sock))
-
-                                for CommSocket in input_sock:
-                                    if CommSocket is tcp_socket:
-
-                                        # print("Processing Input")
-
-                                        tcp_rec_str = tcp_socket.recv(1024)
-                                        if len(tcp_rec_str)>0:
-                                            #print(tcp_rec_str)
-                                            self.tcp_rec_queue.put_nowait(tcp_rec_str)
-                        except:
-                            raise()
+                        # Go through sockets that got input
+                        if len(input_sock) > 0:
+                            for CommSocket in input_sock:
+                                if CommSocket is tcp_socket:
+                                    tcp_rec_str = tcp_socket.recv(1024)
+                                    if len(tcp_rec_str)>0:
+                                        self.tcp_rec_queue.put_nowait(tcp_rec_str)
 
             except:
                 print("Exception when trying to connect to send to server - retry in 15s")
                 #raise()
+                tcp_socket.shutdown(socket.SHUT_RDWR)
+                tcp_socket.close()
                 time.sleep(15)
 
 
