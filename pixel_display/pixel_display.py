@@ -30,7 +30,7 @@ class PixelDisplay:
 
     # Display a welcome message
     def welcome_message(self, name):
-        self.text_display.display_text("Hi {} PI-FIGHTER Here ".format(name))
+        self.text_display.display_text("Hi {}".format(name))
 
     # Display any string
     def text_message(self, display_str):

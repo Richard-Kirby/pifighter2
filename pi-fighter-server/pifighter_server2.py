@@ -7,6 +7,7 @@ import time
 import sys
 import xml.etree.ElementTree as ElementTree
 import logging
+import json
 
 import fighter_manager
 
@@ -226,6 +227,8 @@ class PlayerSessionManager(threading.Thread):
         self.opponent = None
 
         self.fight_log_file = None
+        self.fight_log_dict = {}
+
 
     # Function to mark start of fight
     def write_fight_start(self):
@@ -357,6 +360,16 @@ class PlayerSessionManager(threading.Thread):
                                         # Write Opponent to the fight log file.
                                         self.write_fight_log_item(client_str)
 
+                                        self.fight_log_dict[time.time()] = {'player': self.player.name,
+                                                                            'player health': self.player.current_health,
+                                                                            'opponent name': self.opponent.name,
+                                                                            'opponent current health': self.opponent.current_health,
+                                                                            'opponent attack damage': None,
+                                                                            'player attack damage': None,
+                                                                            'fight winner': self.fight.winner,
+                                                                            'fight over': self.fight.fight_over}
+
+                                        print(self.fight_log_dict)
                                         opponent_ready_str = "<OpponentReady>{}</OpponentReady>".format(self.opponent.name)
 
                                         self.tcp_client_socket.sendall(bytes(opponent_ready_str, "utf-8"))
@@ -392,6 +405,17 @@ class PlayerSessionManager(threading.Thread):
                             # Write Attack to the fight log file.
                             self.write_fight_log_item(pifighter_data.decode())
 
+                            self.fight_log_dict[time.time()] = {'player': self.player.name,
+                                                                'player health': self.player.current_health,
+                                                                'opponent name': self.opponent.name,
+                                                                'opponent current health': self.opponent.current_health,
+                                                                'opponent attack damage': None,
+                                                                'player attack damage':damage,
+                                                                'fight winner': self.fight.winner,
+                                                                'fight over': self.fight.fight_over}
+
+                            #print(self.fight_log_dict)
+
                             with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_socket:
 
                                 fight_state_str = self.fight.create_fight_state_string()
@@ -410,6 +434,16 @@ class PlayerSessionManager(threading.Thread):
 
                                 # Close off the XML fight
                                 self.write_fight_end()
+
+                                #Write the fight details to a file
+                                fight_dict_file_str = 'log/pifighter_server_' + time.strftime("%y%m%d%H%M", time.localtime()) +self.player.name + '_v_' + self.opponent.name + '.json'
+
+                                json_file = open(fight_dict_file_str, 'w')
+
+                                json.dump(self.fight_log_dict, json_file)
+
+                                json_file.close()
+
 
                                 # if player won, regenerate some of player's health
                                 #print("$$ ", self.fight.winner, self.player.name)
@@ -447,6 +481,16 @@ class PlayerSessionManager(threading.Thread):
                         damage = float(msg.text)
 
                         if self.fight is not None:
+
+                            self.fight_log_dict[time.time()] = {'player': self.player.name,
+                                                                'player health': self.player.current_health,
+                                                                'opponent name': self.opponent.name,
+                                                                'opponent current health': self.opponent.current_health,
+                                                                'opponent attack damage': damage,
+                                                                'player attack damage':None,
+                                                                'fight winner': self.fight.winner,
+                                                                'fight over': self.fight.fight_over}
+                            #print(self.fight_log_dict)
 
                             # Send the message via UDP to the pi fighter client
                             with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_socket:
