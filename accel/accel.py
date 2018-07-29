@@ -75,7 +75,7 @@ class Accelerometer(threading.Thread):
         # Take the square root of the squared sums to get the total acceleration.  Use the opposite sign of the
         # Z component.
         self.total_accel = math.copysign(math.sqrt(self.scaled_accel[0] ** 2 + self.scaled_accel[1] ** 2 + self.scaled_accel[2] ** 2),
-                                         -1 * self.scaled_accel[2])
+                                        self.scaled_accel[2])
 
         # Let the deque build up to full length before doing calculations.
         if self.recent_reads.__len__() == self.cycle_num:

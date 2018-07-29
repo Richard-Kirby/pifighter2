@@ -22,7 +22,6 @@ class fighter():
     def reset_health(self):
         self.current_health = self.initial_health
 
-
 # Class to handle the Virtual Fighters.
 class VirtualFighter(fighter):
 
@@ -30,9 +29,6 @@ class VirtualFighter(fighter):
     def __init__(self, name, health, attack_filename):
         super().__init__(name, health)
         self.attack_file = attack_filename
-
-
-
 
 # Player Class - manages player information.  It is just a type of fighter, but gets re-gen and extra health when wins a fight.
 class Player(fighter):
@@ -58,7 +54,7 @@ class VirtualFighterManager():
     def __init__(self):
         # Build a list of Virtual Fighters - todo should be put into a file.
         self.virtual_fighters = [
-            VirtualFighter("One Ewok", 50, 'One_Ewok_Attack_LevelOne.xml'),
+            VirtualFighter("One Ewok", 5, 'One_Ewok_Attack_LevelOne.xml'),
             VirtualFighter("C3-PO", 60, "C3-PO_Attack_LevelOne.xml"),
             VirtualFighter("Early Luke SkyWalker", 75, "Early_Luke_Attack_LevelOne.xml"),
             VirtualFighter("JarJar Binks", 100, "JarJar_Binks_Attack_LevelOne.xml"),
@@ -68,9 +64,7 @@ class VirtualFighterManager():
             VirtualFighter("Darth Vader", 300, "Darth_Vader_Attack_LevelOne.xml")
         ]
 
-
-
-
+# Class to manager players - users of the site.
 class PlayerManager():
     def __init__(self):
         self.player_file = "pi-fighter-users.xml"
@@ -80,14 +74,14 @@ class PlayerManager():
         self.all_players = []
 
         # parse all the players into a element tree
-        player_file_info = ET.parse(self.player_file)
+        self.player_file_info = ET.parse(self.player_file)
 
         # Grabs the root of the XML tree for processing.
-        player_et__root = player_file_info.getroot()
+        self.player_et_root = self.player_file_info.getroot()
 
         # Parse the User information into separate players - this works through the
         # The XML Element Tree
-        for player in player_et__root:
+        for player in self.player_et_root:
 
             # Build a list of players
             self.all_players.append(Player(player.attrib.get('Name'), player.find('Health').text))
@@ -109,13 +103,13 @@ class PlayerManager():
 
 
     # Updates the player's information in the XML tree.
-    def update_player_xml(self, player):
+    def update_player_xml(self, player_to_update):
         # Go through the players looking for the player in question.
         for player in self.player_et_root:
             # print(User.tag, User.attrib)
             # If ind the right player then update his/her health.
-            if (player.attrib.get('Name') == player.name):
-                player.find('Health').text = str(player.health)
+            if player.attrib.get('Name') == player_to_update.name:
+                player.find('Health').text = str(player_to_update.health)
                 # print ("$${}$$".format(User.find('Health').text))
 
     # Update the XML file for persistent storage.

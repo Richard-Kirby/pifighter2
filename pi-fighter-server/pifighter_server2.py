@@ -8,7 +8,9 @@ import sys
 import xml.etree.ElementTree as ElementTree
 import logging
 import json
+from multiprocessing import Process
 
+import plot_fight
 import fighter_manager
 
 # Exception for a Client Disconnection.
@@ -229,6 +231,8 @@ class PlayerSessionManager(threading.Thread):
         self.fight_log_file = None
         self.fight_log_dict = {}
 
+        self.plot_process = None
+
 
     # Function to mark start of fight
     def write_fight_start(self):
@@ -257,6 +261,41 @@ class PlayerSessionManager(threading.Thread):
         else:
             print("Log File is None")
 
+    def process_fight_end(self):
+
+        self.opponent_attack_thread.fight_ongoing_event.clear()
+        self.opponent_attack_thread.join()
+        self.opponent_attack_thread = None
+
+        # Write the fight details to a file
+        fight_dict_file_str = 'log/pifighter_server_' + time.strftime("%y%m%d%H%M",
+                                                                      time.localtime()) + self.player.name + '_v_' + self.opponent.name + '.json'
+
+        json_file = open(fight_dict_file_str, 'w')
+
+        json.dump(self.fight_log_dict, json_file)
+
+        json_file.close()
+
+
+        # if player won, regenerate some of player's health
+        # print("$$ ", self.fight.winner, self.player.name)
+        if self.fight.winner == self.player.name:
+            # Regen some of players health.
+            self.player.regen(50)
+
+            # Reward player with 2% of the opponents health points
+            self.player.reward_health_point(0.02 * self.opponent.initial_health)
+
+            self.player_mgr.update_player_xml(self.player)
+
+            self.player_mgr.update_player_file()
+
+        self.fight = None
+
+        self.plotter = plot_fight.FightPlotter(fight_dict_file_str)
+
+        self.plotter.plot_fight_data()
 
     # Main function to run the thread.
     def run(self):
@@ -267,27 +306,29 @@ class PlayerSessionManager(threading.Thread):
 
             while True:
 
+                # Check for items to deal with in the various sockets.
                 [read_sock, write_sock, except_sock] = select.select([self.player_udp_socket, self.opponent_udp_socket, self.tcp_client_socket],[],
                                                        [self.player_udp_socket, self.opponent_udp_socket, self.tcp_client_socket], 0.5)
 
+                # Deal with TCP messages - used for setting up fights, logging on, etc.  Fight itself is UDP.
                 if self.tcp_client_socket in read_sock:
 
                     # self.request is the TCP socket connected to the client
                     client_str = self.tcp_client_socket.recv(1024).strip().decode()
 
+                    # Deal with client disconnection.  Str is zero length in this case.
                     if len(client_str) == 0:
                         client_exception = ClientDisconnnect("Client Disconnect - killing handler")
                         raise (client_exception)
 
                     # Process the string if length is not equal to 0.
-                    if len(client_str) != 0:
+                    else:
 
                         # Put the data into an XML Element Tree
                         try:
                             client_element = ElementTree.fromstring(client_str)
 
-                            # If Client is asking for the list of Opponents, go through the Virtual Fighters and
-                            # build a list to transmit.
+                            # If Client is asking for the list of players, build a list to transmit.
                             if client_element.tag == 'PlayerList':
                                 player_str = "<PlayerList>"
                                 for player in self.player_mgr.all_players:
@@ -309,7 +350,7 @@ class PlayerSessionManager(threading.Thread):
                                 opponent_str += "</OpponentList>"
                                 self.tcp_client_socket.sendall(bytes(opponent_str, "utf-8"))
 
-                            # If Client has selected an Opponent, then set the opponent to the one selected.
+                            # If Client is logging on, then set the player to the one selected.
                             elif client_element.tag == 'SelectedPlayer':
                                 player_name = client_element.text
 
@@ -331,10 +372,11 @@ class PlayerSessionManager(threading.Thread):
                                                                    + time.strftime("%y%m%d%H%M", time.localtime()) + self.player.name + ".xml", 'wt')
                                         self.write_fight_log_item(client_str)
 
-                                    # If Client has selected an Opponent, then set the opponent to the one selected.
+                            # If Client has selected an Opponent, then set the opponent to the one selected.
                             elif client_element.tag == 'SelectedOpponent':
                                 opponent_name = client_element.text
 
+                                # Find the opponent in the list and set everything else up for the fight.
                                 for virtual_fighter in self.virtual_opp_mgr.virtual_fighters:
                                     if virtual_fighter.name == opponent_name:
                                         self.opponent = virtual_fighter
@@ -343,12 +385,13 @@ class PlayerSessionManager(threading.Thread):
                                         print("Found Opponent {} with {} Health Points" .format(self.opponent.name, self.opponent.health))
 
                                         # Set up opponent attack thread - could be a live opponent at some point todo - sort out live opponents
-                                        # todo - probably shouldn't create thread here.
                                         self.opponent_attack_thread = OpponentAttackThread(46, "Opp Attack Thread", self.opponent, self.opponent_port)
 
                                         self.opponent_attack_thread.start()
                                         self.fight = Fight(self.player, self.opponent)
 
+                                        # Set initial health to current health - used for regen when fighting.
+                                        self.player.initial_health = self.player.current_health
 
                                         # Reset the opponents health - this is needed if opponent has already been used.
                                         self.opponent.reset_health()
@@ -360,6 +403,9 @@ class PlayerSessionManager(threading.Thread):
                                         # Write Opponent to the fight log file.
                                         self.write_fight_log_item(client_str)
 
+                                        # Zero out the fight dictionary - might have done a fight already.
+                                        self.fight_log_dict = {}
+
                                         self.fight_log_dict[time.time()] = {'player': self.player.name,
                                                                             'player health': self.player.current_health,
                                                                             'opponent name': self.opponent.name,
@@ -369,11 +415,8 @@ class PlayerSessionManager(threading.Thread):
                                                                             'fight winner': self.fight.winner,
                                                                             'fight over': self.fight.fight_over}
 
-                                        print(self.fight_log_dict)
                                         opponent_ready_str = "<OpponentReady>{}</OpponentReady>".format(self.opponent.name)
-
                                         self.tcp_client_socket.sendall(bytes(opponent_ready_str, "utf-8"))
-
                             else:
                                 print("Don't know how to process this one {}" .format(client_str))
                         except:
@@ -382,12 +425,7 @@ class PlayerSessionManager(threading.Thread):
 
                 # Deal with any UDP messages - typically attack messages.
                 if self.player_udp_socket in read_sock:
-
                     pifighter_data, self.client_udp_address = self.player_udp_socket.recvfrom(4096)
-                    #print("udp message {} from {}", self.client_udp_address, pifighter_data)
-
-                    # todo Add in logging of player attack
-
 
                     # Make sure a fight is set up
                     if self.opponent_attack_thread is not None and self.fight is not None:
@@ -414,8 +452,6 @@ class PlayerSessionManager(threading.Thread):
                                                                 'fight winner': self.fight.winner,
                                                                 'fight over': self.fight.fight_over}
 
-                            #print(self.fight_log_dict)
-
                             with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_socket:
 
                                 fight_state_str = self.fight.create_fight_state_string()
@@ -428,37 +464,7 @@ class PlayerSessionManager(threading.Thread):
 
                             # Dealing with the end of the fight.
                             if self.fight.fight_over and self.opponent_attack_thread is not None:
-                                self.opponent_attack_thread.fight_ongoing_event.clear()
-                                self.opponent_attack_thread.join()
-                                self.opponent_attack_thread = None
-
-                                # Close off the XML fight
-                                self.write_fight_end()
-
-                                #Write the fight details to a file
-                                fight_dict_file_str = 'log/pifighter_server_' + time.strftime("%y%m%d%H%M", time.localtime()) +self.player.name + '_v_' + self.opponent.name + '.json'
-
-                                json_file = open(fight_dict_file_str, 'w')
-
-                                json.dump(self.fight_log_dict, json_file)
-
-                                json_file.close()
-
-
-                                # if player won, regenerate some of player's health
-                                #print("$$ ", self.fight.winner, self.player.name)
-                                if self.fight.winner == self.player.name:
-                                    # Regen some of players health.
-                                    self.player.regen(50)
-
-                                    # Reward player with 2% of the opponents health points
-                                    self.player.reward_health_point(0.02 * self.opponent.initial_health)
-
-                                self.fight = None
-
-
-                                #print("Opponent Attack Thread ", self.opponent_attack_thread)
-
+                                self.process_fight_end()
 
                     else:
                         print("Not in a Fight - start a new one.")
@@ -467,8 +473,6 @@ class PlayerSessionManager(threading.Thread):
                 if self.opponent_udp_socket in read_sock:
                     # get the data
                     opponent_data, address = self.opponent_udp_socket.recvfrom(4096)
-
-                    # todo Add in logging of opponent attack
 
                     # Process the UDP string
                     msg = ElementTree.fromstring(opponent_data)
@@ -490,7 +494,6 @@ class PlayerSessionManager(threading.Thread):
                                                                 'player attack damage':None,
                                                                 'fight winner': self.fight.winner,
                                                                 'fight over': self.fight.fight_over}
-                            #print(self.fight_log_dict)
 
                             # Send the message via UDP to the pi fighter client
                             with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_socket:
@@ -505,14 +508,10 @@ class PlayerSessionManager(threading.Thread):
                             # Clearing up at the end of a fight
                             if self.fight.fight_over and self.opponent_attack_thread is not None:
 
-                                self.opponent_attack_thread.fight_ongoing_event.clear()
-                                self.opponent_attack_thread.join()
-                                self.opponent_attack_thread = None
-                                self.fight = None
+                                self.process_fight_end()
 
         except ClientDisconnnect:
             print("Client Disconnect")
-
 
         except:
             raise
@@ -596,10 +595,3 @@ if __name__ == "__main__":
     fight_mgr = FighterManager()
     fight_mgr.player_manager.print_players()
     fight_mgr.start()
-
-
-
-
-
-
-

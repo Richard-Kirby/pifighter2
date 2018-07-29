@@ -1,5 +1,7 @@
 import json
 import matplotlib
+import time
+#from multiprocessing import Process
 
 matplotlib.use('TkAgg')
 
@@ -10,7 +12,7 @@ from matplotlib import style
 
 style.use('fivethirtyeight')
 
-class FightPlotter:
+class FightPlotter():
 
     def __init__(self, filename):
         #self.fig = plt.figure()
@@ -59,7 +61,10 @@ class FightPlotter:
         for i in range(len(self.time_series)):
             self.time_series[i] = float(self.time_series[i]) - float(start_time)
 
-    def plot_fight(self):
+    def plot_fight_data(self):
+
+        # Prepare the data.
+        self.prep_data()
 
         self.ax[0].clear()
         self.ax[0].plot(self.time_series, self.player_health, label=self.player)
@@ -69,11 +74,15 @@ class FightPlotter:
         self.ax[0].legend()
 
         self.ax[1].clear()
-        self.ax[1].set_ylim(-1,16)
+        self.ax[1].set_ylim(-1,18)
         self.ax[1].set_ylabel('Attacks(g)')
         self.ax[1].plot(self.time_series, self.attacks, ' o', 'x')
         self.ax[1].set_xlabel('time')
+        plt.ion()
         plt.show()
+        plt.pause(0.1)
+        #time.sleep(10)
+        #   plt.close(self.fig)
 
 if __name__ == "__main__":
 

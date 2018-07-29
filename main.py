@@ -50,7 +50,7 @@ class Application(tk.Frame, threading.Thread):
         self.heading_label.pack(side="top")
 
         # Init with guest logon.
-        self.player.set("No one logged on - assume GUEST")
+        self.player.set("Logon to Fight or Workout")
         self.player_label = tk.Label(textvariable=self.player, width=pi_fighter_width,
                                      font=("Starjhol.ttf", 20, "bold"))
         self.player_label.pack(side="top")
@@ -255,7 +255,9 @@ class Application(tk.Frame, threading.Thread):
     def start_fight(self):
         self.opponent_select()
 
-        fight_str = "Fight {} v {}".format(self.player.get(), self.opponent)
+        fight_str = "Fight {} v {}".format(self.player_name, self.opponent)
+
+        self.player.set("")
 
         # Updates the banner at the top of the application.
         self.player.set(fight_str)
