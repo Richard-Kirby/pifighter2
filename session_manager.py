@@ -133,10 +133,10 @@ class Session(Event, threading.Thread):
         self.player_attack_q = queue.Queue()
         self.opponent_attack_q = queue.Queue()
 
-        self.accel = accel.Accelerometer(10, self.player_attack_q )
+        self.accel = accel.Accelerometer(20, self.player_attack_q )
         self.accel.start()
 
-        # Delay for display.  todo needs to be tuned.
+        # Delay for display.  This is the time that the attack bar is displayed before being cleared.
         self.delay=0.2
 
     # Set up workout for the player.

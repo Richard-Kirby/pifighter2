@@ -198,7 +198,7 @@ class Fight:
                     self.winner = self.player.name
                     self.fight_over = True
 
-        print("Fighter = {}, Damage = {}, Health = {}" .format(fighter.name, damage, fighter.current_health))
+            print("Fighter = {}, Damage = {}, Health = {}" .format(fighter.name, damage, fighter.current_health))
 
 
 class PlayerSessionManager(threading.Thread):
@@ -230,8 +230,6 @@ class PlayerSessionManager(threading.Thread):
 
         self.fight_log_file = None
         self.fight_log_dict = {}
-
-        self.plot_process = None
 
 
     # Function to mark start of fight

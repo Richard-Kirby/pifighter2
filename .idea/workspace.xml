@@ -5,12 +5,365 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b98157e7-a11b-45ba-8dd5-f32487bf34f4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011530.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011542.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011543.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011544.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011545.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011547.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011548.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011555.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011603.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011608.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011611.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011636.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011637.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011639.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011640.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011642.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011647.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011650.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011653.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011655.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011656.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011716.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011913.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011931.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011933.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011934.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011935.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011939.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011953.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011955.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807011956.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012001.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012002.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012006.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012010.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012017.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012020.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807012051.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020812.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020816.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020847.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020848.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020856.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020902.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020904.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020929.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020933.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020937.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020939.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020946.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020947.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020951.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020956.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807020959.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021006.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021012.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021045.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021046.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021049.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021056.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021057.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021207.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021221.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021222.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021223.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021236.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021244.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021247.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021310.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021314.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021547.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021549.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021625.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021627.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021629.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021651.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021702.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021703.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021707.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021822.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807021826.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807071107.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807071108.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807071113.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807071114.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807071244.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081221.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081235.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081236.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081240.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081254.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081258.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081301.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081303.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081327.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081333.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081348.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081410.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081415.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081416.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081443.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081445.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081455.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081508.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081515.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081535.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081546.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081547.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081555.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081616.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081622.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081632.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081638.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081639.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081640.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081648.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081658.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081659.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081701.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081703.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081706.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081707.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081719.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081726.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081727.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081728.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081731.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081733.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081734.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pi-fighter-server-attacks1807081743.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807281052Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807281055Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807281103Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807281111Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807290951Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807290953Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291014Richard Kirby_v_Early Luke SkyWalker.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291015Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291015Richard Kirby_v_Darth Vader.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291015Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291029Richard Kirby_v_Yoda.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291033Richard Kirby_v_Darth Vader.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291037Richard Kirby_v_Many Ewoks.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291050Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291050Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291052Richard Kirby_v_Darth Vader.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291052Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291054Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291056Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291056Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291057Richard Kirby_v_JarJar Binks.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291057Richard Kirby_v_Many Ewoks.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291110Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291114Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291120Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291122Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291124Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291130Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291131Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291132Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291133Richard Kirby_v_Darth Vader.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291133Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291155Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291200Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291202Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291219Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291219Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291220Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291221Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291227Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291230Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291233Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291234Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291235Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291236Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291236Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291240Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291241Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291242Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291242Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291248Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291248Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291254Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291254Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291259Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291259Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291313Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291315Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291316Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291318Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291323Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291326Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291328Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291330Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291338Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291339Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291344Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291634Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291635Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291644Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291645Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291646Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291648Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291648Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291649Richard Kirby_v_Darth Vader.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291649Richard Kirby_v_Early Luke SkyWalker.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291649Richard Kirby_v_JarJar Binks.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291651Richard Kirby_v_Jedi Luke.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291741Richard Kirby_v_One Ewok.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291742Richard Kirby_v_JarJar Binks.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1807291743Richard Kirby_v_C3-PO.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271225Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271227Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271251Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271253Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271256Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271258Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271300Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271302Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271303Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271305Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271307Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271309Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271313Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271335Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271337Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271357Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271408Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271426Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271428Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271501Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271609Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271658Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271701Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271713Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271813Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807280931Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807280937Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807280946Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807280948Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807280954Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281000Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281004Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281006Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281010Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281013Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281022Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281024Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281048Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281049Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281052Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281054Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281103Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807281110Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807290951Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807290953Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807290958Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291003Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291013Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291015Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291029Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291033Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291037Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291040Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291049Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291051Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291052Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291055Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291110Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291114Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291120Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291122Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291124Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291130Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291132Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291155Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291200Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291219Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291220Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291227Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291230Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291232Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291234Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291236Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291240Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291242Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291247Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291253Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291259Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291312Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291315Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291318Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291323Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291326Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291330Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291338Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291339Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291344Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291634Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291644Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291647Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291650Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291741Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291747Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291750Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291758Joh Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291758Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291804Richard Kirby.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807291806Richard Kirby.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pifighter2.iml" afterPath="$PROJECT_DIR$/.idea/pifighter2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accel/__init__.py" afterPath="$PROJECT_DIR$/accel/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accel/accel.py" afterPath="$PROJECT_DIR$/accel/accel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event.py" afterPath="$PROJECT_DIR$/event.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gui/__init__.py" afterPath="$PROJECT_DIR$/gui/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gui/gui.py" afterPath="$PROJECT_DIR$/gui/gui.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/C3-PO_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/C3-PO_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Darth_Vader_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Darth_Vader_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Early_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Early_Luke_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/JarJar_Binks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/JarJar_Binks_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Jedi_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Jedi_Luke_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Many_Ewoks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Many_Ewoks_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/One_Ewok_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/One_Ewok_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/README.md" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Yoda_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Yoda_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/C3-PO_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/C3-PO_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Darth_Vader_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Darth_Vader_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Early_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Early_Luke_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/JarJar_Binks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/JarJar_Binks_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Jedi_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Jedi_Luke_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Many_Ewoks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Many_Ewoks_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/One_Ewok_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/One_Ewok_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/README.md" afterPath="$PROJECT_DIR$/pi-fighter-server/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Yoda_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Yoda_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/attack_only_stub.py" afterPath="$PROJECT_DIR$/pi-fighter-server/attack_only_stub.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" afterPath="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.cfg" afterPath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py" afterPath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-users.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-users.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py" afterPath="$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/plot_fight.py" afterPath="$PROJECT_DIR$/pi-fighter-server/plot_fight.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter.cfg" afterPath="$PROJECT_DIR$/pi-fighter.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pifighter2.cfg" afterPath="$PROJECT_DIR$/pifighter2.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/__init__.py" afterPath="$PROJECT_DIR$/pixel_display/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/bar_indicator.py" afterPath="$PROJECT_DIR$/pixel_display/bar_indicator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/pixel_display.py" afterPath="$PROJECT_DIR$/pixel_display/pixel_display.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/text_handler.py" afterPath="$PROJECT_DIR$/pixel_display/text_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/__init__.py" afterPath="$PROJECT_DIR$/server_communicator/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/server_communicator.py" afterPath="$PROJECT_DIR$/server_communicator/server_communicator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/udp_client.py" afterPath="$PROJECT_DIR$/server_communicator/udp_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/udp_server.py" afterPath="$PROJECT_DIR$/server_communicator/udp_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/session_manager.py" afterPath="$PROJECT_DIR$/session_manager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats.py" afterPath="$PROJECT_DIR$/stats.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tester.py" afterPath="$PROJECT_DIR$/tester.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,10 +377,22 @@
       <file leaf-file-name="pifighter_server2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="297" column="30" lean-forward="false" selection-start-line="297" selection-start-column="30" selection-end-line="297" selection-end-column="30" />
+            <state relative-caret-position="148">
+              <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="13" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attack_only_stub.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pi-fighter-server/attack_only_stub.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,18 +401,28 @@
       <file leaf-file-name="fighter_manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pi-fighter-server/fighter_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="68" column="23" lean-forward="true" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+            <state relative-caret-position="233">
+              <caret line="128" column="16" lean-forward="false" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accel.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="session_manager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/session_manager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="135" column="45" lean-forward="false" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accel.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/accel/accel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1606">
-              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -56,8 +431,8 @@
       <file leaf-file-name="plot_fight.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pi-fighter-server/plot_fight.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="84" column="12" lean-forward="false" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+            <state relative-caret-position="125">
+              <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -65,11 +440,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="253" column="17" lean-forward="true" selection-start-line="253" selection-start-column="17" selection-end-line="253" selection-end-column="17" />
+            <state relative-caret-position="5368">
+              <caret line="253" column="17" lean-forward="false" selection-start-line="253" selection-start-column="17" selection-end-line="253" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -86,16 +461,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>FIghtover</find>
-      <find>fight_s</find>
-      <find>fight_st</find>
-      <find>print</find>
-      <find>initialhe</find>
-      <find>player</find>
       <find>opponent</find>
       <find>opponentrea</find>
       <find>acc</find>
-      <find>accel</find>
       <find>PlayerSessionManager</find>
       <find>create_fight_state_string</find>
       <find>writ</find>
@@ -107,15 +475,22 @@
       <find>clos</find>
       <find>start</find>
       <find>FIght</find>
-      <find>write_fight_log_item</find>
       <find>print(self.fight_log_dict)</find>
       <find>attack</find>
       <find>opponent attack</find>
-      <find>time</find>
       <find>fight_log_dict</find>
       <find>initial</find>
       <find>__</find>
       <find>plot</find>
+      <find>self.delay</find>
+      <find>accel</find>
+      <find>time</find>
+      <find>player.name</find>
+      <find>write</find>
+      <find>write_fight_log_item</find>
+      <find>Fighter=</find>
+      <find>Fighter =</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,15 +513,15 @@
         <option value="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py" />
         <option value="$PROJECT_DIR$/server_communicator/udp_server.py" />
         <option value="$PROJECT_DIR$/server_communicator/udp_client.py" />
-        <option value="$PROJECT_DIR$/session_manager.py" />
         <option value="$PROJECT_DIR$/server_communicator/server_communicator.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271813Richard Kirby.xml" />
         <option value="$PROJECT_DIR$/pixel_display/pixel_display.py" />
         <option value="$PROJECT_DIR$/accel/accel.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/session_manager.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/plot_fight.py" />
-        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -172,7 +547,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -205,6 +579,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,17 +641,17 @@
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14484271" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14411119" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10539846" sideWeight="0.5054865" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.49451354" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32904884" sideWeight="0.52011704" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.47988296" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -303,20 +678,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://W:/unicorn-hat-hd/examples/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://W:/unicorn-hat-hd/examples/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://W:/unicorn-hat-hd/examples/rkrainbowtext.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -489,14 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/session_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1232">
-          <caret line="135" column="42" lean-forward="false" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_communicator/server_communicator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2596">
@@ -580,7 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="888" lean-forward="true" selection-start-line="0" selection-start-column="888" selection-end-line="0" selection-end-column="888" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -588,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="472" column="7" lean-forward="true" selection-start-line="472" selection-start-column="7" selection-end-line="472" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -596,7 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1628" lean-forward="false" selection-start-line="0" selection-start-column="1628" selection-end-line="0" selection-end-column="1628" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,7 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2322">
           <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -620,7 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="781" lean-forward="false" selection-start-line="0" selection-start-column="781" selection-end-line="0" selection-end-column="781" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -628,50 +976,75 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5368">
+          <caret line="253" column="17" lean-forward="false" selection-start-line="253" selection-start-column="17" selection-end-line="253" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accel/accel.py">
+    <entry file="file://$PROJECT_DIR$/session_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state relative-caret-position="206">
+          <caret line="135" column="45" lean-forward="false" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi-fighter-server/attack_only_stub.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pi-fighter-server/fighter_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="68" column="23" lean-forward="true" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        <state relative-caret-position="233">
+          <caret line="128" column="16" lean-forward="false" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="297" column="30" lean-forward="false" selection-start-line="297" selection-start-column="30" selection-end-line="297" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pi-fighter-server/plot_fight.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="84" column="12" lean-forward="false" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+        <state relative-caret-position="125">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="253" column="17" lean-forward="true" selection-start-line="253" selection-start-column="17" selection-end-line="253" selection-end-column="17" />
+        <state relative-caret-position="148">
+          <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_1808060818Richard Kirby_v_C3-PO.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="268" lean-forward="false" selection-start-line="0" selection-start-column="268" selection-end-line="0" selection-end-column="268" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accel/accel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding />
         </state>
       </provider>

@@ -32,7 +32,7 @@ class FightPlotter():
     def prep_data(self):
 
         for time_x, fight_info in sorted(self.fight_dict.items()):
-            print("{}, {}, {}, {}, {}".format(time_x, fight_info["player"], fight_info["player health"], fight_info["player attack damage"], fight_info["opponent name"], fight_info["opponent current health"], fight_info["opponent attack damage"],))
+            #print("{}, {}, {}, {}, {}".format(time_x, fight_info["player"], fight_info["player health"], fight_info["player attack damage"], fight_info["opponent name"], fight_info["opponent current health"], fight_info["opponent attack damage"],))
 
             self.player = fight_info["player"]
             self.opponent = fight_info["opponent name"]
@@ -66,6 +66,8 @@ class FightPlotter():
         # Prepare the data.
         self.prep_data()
 
+        plt.ion()
+
         self.ax[0].clear()
         self.ax[0].plot(self.time_series, self.player_health, label=self.player)
         self.ax[0].plot(self.time_series, self.opponent_health, label=self.opponent)
@@ -78,9 +80,8 @@ class FightPlotter():
         self.ax[1].set_ylabel('Attacks(g)')
         self.ax[1].plot(self.time_series, self.attacks, ' o', 'x')
         self.ax[1].set_xlabel('time')
-        plt.ion()
-        plt.show()
-        plt.pause(0.1)
+        plt.pause(0.0001)
+        #plt.show(block=False)
         #time.sleep(10)
         #   plt.close(self.fig)
 
