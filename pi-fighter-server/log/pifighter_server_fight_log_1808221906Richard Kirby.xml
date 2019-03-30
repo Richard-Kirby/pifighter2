@@ -1,0 +1,20 @@
+<FightLog><Time>1534961219.4058666</Time><LogStr>&lt;SelectedPlayer&gt;Richard Kirby&lt;/SelectedPlayer&gt;</LogStr></FightLog>
+<Fight>
+<FightLog><Time>1534961229.42831</Time><LogStr>&lt;SelectedOpponent&gt;C3-PO&lt;/SelectedOpponent&gt;</LogStr></FightLog>
+<FightLog><Time>1534961233.7509968</Time><LogStr>&lt;Attack&gt;9.599888207857582&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1534961233.7521646</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;95.8799999999994&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;50.40011179214242&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1534961233.7528868</Time><LogStr>&lt;OpponentAttack&gt;3.391&lt;/OpponentAttack&gt;</LogStr></FightLog>
+<FightLog><Time>1534961233.7544012</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;92.4889999999994&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;50.40011179214242&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1534961233.7552114</Time><LogStr>&lt;Attack&gt;12.615305341517132&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1534961233.7561564</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;92.4889999999994&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;37.78480645062528&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1534961234.012771</Time><LogStr>&lt;Attack&gt;4.083002411155166&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1534961234.0151227</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;92.4889999999994&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;33.70180403947012&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1534961234.5194569</Time><LogStr>&lt;Attack&gt;12.980773141594105&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1534961234.5216718</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;92.4889999999994&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;20.721030897876012&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1534961234.5298328</Time><LogStr>&lt;Attack&gt;8.939780737899763&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1534961234.533231</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;92.4889999999994&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;11.78125015997625&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1534961234.543053</Time><LogStr>&lt;Attack&gt;4.182873974741304&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1534961234.5460255</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;92.4889999999994&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;7.598376185234945&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1534961235.053059</Time><LogStr>&lt;Attack&gt;16.500555151934638&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1534961235.056491</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;92.4889999999994&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;-8.902178966699694&lt;/OpponentHealth&gt;&lt;FightOver&gt;True&lt;/FightOver&gt;&lt;FightWinner&gt;Richard Kirby&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1534961242.6997163</Time><LogStr>&lt;OpponentAttack&gt;3.538&lt;/OpponentAttack&gt;</LogStr></FightLog>

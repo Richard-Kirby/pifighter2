@@ -4,6 +4,7 @@ import queue
 import xml.etree.ElementTree as et
 import time
 import threading
+from PIL import Image, ImageTk
 
 # My modules
 import session_manager as session_mgr
@@ -16,7 +17,7 @@ class Application(tk.Frame, threading.Thread):
 
     # Set up the basic GUI elements
     def __init__(self, master=None):
-        super().__init__(master)
+        super().__init__(master, borderwidth=5, relief="sunken", width=200, height=100)
         threading.Thread.__init__(self)
 
         self.master = master
@@ -39,32 +40,35 @@ class Application(tk.Frame, threading.Thread):
                                                           self.udp_port, self.udp_send_q, self.udp_rec_q,
                                                           self.tcp_port, self.tcp_send_q, self.tcp_rec_q)
 
+        #
+        self.grid(row=0, column=0) #, columnspan=2, rowspan=8, sticky="nsew")
+        #root.grid_rowconfigure(0, weight=1)
+        #root.grid_columnconfigure(0, weight=1)
+
         # Holds player string.
         self.player = tk.StringVar()
         pi_fighter_width = 40
         pi_fighter_font = ("Starjhol.ttf", 12, "bold")
 
         # Title of the application
-        self.heading_label = tk.Label(text="PI FIGHTER", bg="green", width=pi_fighter_width,
+        self.heading_label = tk.Label(self, text="PI FIGHTER", bg="green", width=15,
                                       font=("Starjhol.ttf", 25, "bold"))
-        self.heading_label.pack(side="top")
+        self.heading_label.grid(row=0, column=0)
 
         # Init with guest logon.
+        #
         self.player.set("Logon to Fight or Workout")
-        self.player_label = tk.Label(textvariable=self.player, width=pi_fighter_width,
+        self.player_label = tk.Label(self, textvariable=self.player, width=pi_fighter_width,
                                      font=("Starjhol.ttf", 20, "bold"))
-        self.player_label.pack(side="top")
-        self.pack()
+        self.player_label.grid(row=1, column=0)
 
         # Create the list of possible players
         self.player_list = tk.Listbox(self, font=pi_fighter_font, width=pi_fighter_width, selectmode=tk.SINGLE,
                                       exportselection=0)
-        # Create select box of players
-        #for player in self.players:
-        #    self.player_list.insert(tk.END, player)
 
+        # Requests list of players from the server
         self.player_list_setup()
-        self.player_list.pack(side="top")
+        self.player_list.grid(row = 2, column =0)
 
 
         # Select first player
@@ -74,13 +78,13 @@ class Application(tk.Frame, threading.Thread):
         self.player_button = tk.Button(self, font=pi_fighter_font, width=pi_fighter_width, bg="green")
         self.player_button["text"] = "Logon Player"
         self.player_button["command"] = self.player_select
-        self.player_button.pack(side="top")
+        self.player_button.grid(row = 3, column =0 )
 
         # Create opponent list.
         self.opponent_list = tk.Listbox(self, font=pi_fighter_font, width=pi_fighter_width, selectmode=tk.SINGLE,
                                         exportselection=0)
 
-        self.opponent_list.pack(side="top")
+        self.opponent_list.grid(row = 4, column =0 )
         self.opponent_list.select_set(0)  # This only sets focus on the first item.
         self.opponent_list.event_generate("<<ListboxSelect>>")
 
@@ -91,21 +95,24 @@ class Application(tk.Frame, threading.Thread):
         self.workout = tk.Button(self, font=pi_fighter_font, bg="green")
         self.workout["text"] = "Workout"
         self.workout["command"] = self.start_workout
-        self.workout.pack(side="top")
+        self.workout.grid(row = 5, column =0 )
 
         # Fight button starts a fight with the selected opponent.
         self.workout = tk.Button(self, font=pi_fighter_font, bg="green")
         self.workout["text"] = "Fight"
         self.workout["command"] = self.start_fight
-        self.workout.pack(side="top")
+        self.workout.grid(row = 6, column =0 )
 
-        # Window to display the current fight information
-        # self.fight_window = tk.Text
+        self.image = Image.open("luke.jpg")
+        photo = ImageTk.PhotoImage(self.image)
+        self.label = tk.Label(image=photo)
+        self.label.image = photo  # keep a reference!
+        self.label.grid(row=0, column =1)
 
         # Quit button
         self.quit = tk.Button(self, text="QUIT", fg="red", font=pi_fighter_font,
                               command=self.master.destroy)
-        self.quit.pack(side="bottom")
+        self.quit.grid(row = 7, column =0 )
 
         self.session = None
 

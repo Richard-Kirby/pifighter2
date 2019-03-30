@@ -31,7 +31,12 @@ class BarIndicator:
     # Display a percentage of the bar graph
     def display_percent(self, bar_percent):
 
-        # Calculate number of pixels to illuminate.
+
+        # Calculate number of pixels to illuminate.  If asked to display something more than the number of pixels, set
+        # to the max available todo Make this a parameter rather than hard coding it to 16 pixels
+        if bar_percent > 100:
+            bar_percent = 100
+
         bar_pixels = bar_percent/100 * (self.y_size -1)
 
         # Figure out the colour to display based on the percentage

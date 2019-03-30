@@ -24,7 +24,7 @@ class PixelDisplay:
         unicornhathd.clear()
         unicornhathd.set_all(10, 0, 10)
         unicornhathd.show()
-        unicornhathd.rotation(-90)
+        unicornhathd.rotation(270)
         unicornhathd.brightness(.75)
         unicornhathd.show()
 
