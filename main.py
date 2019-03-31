@@ -125,6 +125,9 @@ class Application(tk.Frame, threading.Thread):
 
     def run(self):
 
+        # init of winner_text
+        winner_text = 'none'
+
         while(1):
 
             #print("1")

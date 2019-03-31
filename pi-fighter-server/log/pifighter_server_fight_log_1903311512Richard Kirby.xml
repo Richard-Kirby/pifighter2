@@ -1,0 +1,6 @@
+<FightLog><Time>1554041531.5883582</Time><LogStr>&lt;SelectedPlayer&gt;Richard Kirby&lt;/SelectedPlayer&gt;</LogStr></FightLog>
+<Fight>
+<FightLog><Time>1554041541.6080358</Time><LogStr>&lt;SelectedOpponent&gt;One Ewok&lt;/SelectedOpponent&gt;</LogStr></FightLog>
+<FightLog><Time>1554041545.6800067</Time><LogStr>&lt;Attack&gt;5.228010857904275&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1554041545.6825342</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;372.69999999999925&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;-0.228010857904275&lt;/OpponentHealth&gt;&lt;FightOver&gt;True&lt;/FightOver&gt;&lt;FightWinner&gt;Richard Kirby&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1554041549.2642694</Time><LogStr>&lt;OpponentAttack&gt;2.391&lt;/OpponentAttack&gt;</LogStr></FightLog>

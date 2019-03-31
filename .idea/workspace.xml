@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b98157e7-a11b-45ba-8dd5-f32487bf34f4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/pifighter2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pifighter2.iml" afterDir="false" />
@@ -37,6 +38,9 @@
       <change beforePath="$PROJECT_DIR$/pi-fighter-server/Yoda_LevelOne.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pi-fighter-server/Yoda_LevelOne.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pi-fighter-server/attack_only_stub.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi-fighter-server/attack_only_stub.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_19_03_31_12:31Richard Kirby_v_C3-PO.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_19_03_31_12:35Richard Kirby_v_Early Luke SkyWalker.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_19_03_31__1316_Richard Kirby_v_One Ewok.json" beforeDir="false" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_19_03_31__1316_Richard Kirby_v_One Ewok.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib" beforeDir="false" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/.circleci/deploy-docs.sh" beforeDir="false" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/.circleci/deploy-docs.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/ci/silence" beforeDir="false" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/ci/silence" afterDir="false" />
@@ -76,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1364">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="428">
+              <caret line="215" lean-forward="true" selection-start-line="215" selection-end-line="215" />
             </state>
           </provider>
         </entry>
@@ -85,10 +89,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="603" lean-forward="true" selection-start-line="603" selection-end-line="603" />
+            <state relative-caret-position="264">
+              <caret line="301" column="97" selection-start-line="301" selection-start-column="97" selection-end-line="301" selection-end-column="97" />
               <folding>
-                <marker date="1554035282129" expanded="true" signature="8447:8448" ph="..." />
+                <marker date="1554042269827" expanded="true" signature="8447:8448" ph="..." />
               </folding>
             </state>
           </provider>
@@ -105,7 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>file</find>
       <find>state</find>
       <find>ight_ongoing_event</find>
       <find>clos</find>
@@ -135,6 +138,7 @@
       <find>row</find>
       <find>json</find>
       <find>fight_log_dict</find>
+      <find>winner</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -260,13 +264,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523179041610</updated>
-      <workItem from="1554034929098" duration="604000" />
+      <workItem from="1554034929098" duration="3109000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1607000" />
+    <option name="totallyTimeSpent" value="4112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -278,7 +282,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="7" />
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10733182" />
@@ -563,17 +567,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="428">
+          <caret line="215" lean-forward="true" selection-start-line="215" selection-end-line="215" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="603" lean-forward="true" selection-start-line="603" selection-end-line="603" />
+        <state relative-caret-position="264">
+          <caret line="301" column="97" selection-start-line="301" selection-start-column="97" selection-end-line="301" selection-end-column="97" />
           <folding>
-            <marker date="1554035282129" expanded="true" signature="8447:8448" ph="..." />
+            <marker date="1554042269827" expanded="true" signature="8447:8448" ph="..." />
           </folding>
         </state>
       </provider>
