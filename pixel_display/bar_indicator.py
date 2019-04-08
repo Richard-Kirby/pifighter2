@@ -31,7 +31,6 @@ class BarIndicator:
     # Display a percentage of the bar graph
     def display_percent(self, bar_percent):
 
-
         # Calculate number of pixels to illuminate.  If asked to display something more than the number of pixels, set
         # to the max available todo Make this a parameter rather than hard coding it to 16 pixels
         if bar_percent > 100:
@@ -39,17 +38,18 @@ class BarIndicator:
 
         bar_pixels = bar_percent/100 * (self.y_size -1)
 
+        print("@@ {}".format(bar_pixels))
+
         # Figure out the colour to display based on the percentage
         state_colour = self.colour_list[int(bar_percent / 100 * 15)] # 15 is the maximum colours in the colour list
 
         # Set the pixels as required, using the colour for the state. Pixels not actively lit use the background
         # colour (could be black).
-        for i in range (0, self.x_size):
-            for j in range (self.y_size):
-                if j <= int(bar_pixels):
-                    unicornhathd.set_pixel_hsv(self.x_loc + i, self.y_loc + j, state_colour)
-
+        for i in range (self.x_size):
+            for j in range (self.y_size,):
+                if j >= 15 - int(bar_pixels):
+                    unicornhathd.set_pixel_hsv(self.x_loc + i, j, state_colour)
                 else:
-                    unicornhathd.set_pixel(self.x_loc + i, self.y_loc + j, self.back_colour[0],self.back_colour[1], self.back_colour[2])
-
+                    unicornhathd.set_pixel(self.x_loc + i, j, self.back_colour[0], self.back_colour[1],
+                                           self.back_colour[2])
 

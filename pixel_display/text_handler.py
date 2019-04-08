@@ -14,7 +14,7 @@ import unicornhathd
 class TextDisplay:
 
     def __init__(self,  x_size=16, y_size=16, x_loc=0, y_loc=0, delay=0.01,
-                 font_file = "/usr/share/fonts/truetype/freefont/FreeSansBold.ttf", font_size = 12, colour=(0,0,100)):
+                 font_file = "/usr/share/fonts/truetype/freefont/FreeSansBold.ttf", font_size = 13, colour=(0,0,100)):
         self.x_size = x_size
         self.y_size = y_size
         self.x_loc = 0
@@ -34,7 +34,7 @@ class TextDisplay:
         curr_rotation = unicornhathd.get_rotation()
 
         # Adjusting rotation - will turn it back after the displaying the text.
-        unicornhathd.rotation (curr_rotation - 180)
+        unicornhathd.rotation (curr_rotation - 0)
 
         # Use `fc-list` to show a list of installed fonts on your system,
         # or `ls /usr/share/fonts/` and explore.

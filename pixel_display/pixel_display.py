@@ -12,8 +12,8 @@ import time
 class PixelDisplay:
 
     # Set up Attack indication bars.
-    player_attack_bar = BarIndicator(6, 16, 2, 0, numpy.arange(.93, .60, -.33 / 16))
-    opponent_attack_bar = BarIndicator(6, 16, 8, 0, numpy.arange(0, .33, .33 / 16))
+    player_attack_bar = BarIndicator(6, 16, 8, 15, numpy.arange(.93, .60, -.33 / 16))
+    opponent_attack_bar = BarIndicator(6, 16, 2, 15, numpy.arange(0, .33, .33 / 16))
 
     # Set up text display
     text_display = TextDisplay()
@@ -24,29 +24,31 @@ class PixelDisplay:
         unicornhathd.clear()
         unicornhathd.set_all(10, 0, 10)
         unicornhathd.show()
-        unicornhathd.rotation(270)
+        unicornhathd.rotation(270) # Rotation
         unicornhathd.brightness(.75)
         unicornhathd.show()
 
     # Display a welcome message
     def welcome_message(self, name):
-        self.text_display.display_text("Hi {}".format(name))
+        self.text_display.display_text("Next Pi Fighter {} ".format(name))
 
     # Display any string
     def text_message(self, display_str):
+        display_str += " "
         self.text_display.display_text(display_str)
 
     # Set up player health
     def set_up_player_health(self, pixel_height):
         #global BarIndicator
 
-        self.player_health_bar = BarIndicator(2, pixel_height, 0, 0, numpy.arange(0, .33, .33 / 16))
+        #self.player_health_bar = BarIndicator(2, pixel_height, 0, 0, numpy.arange(0, .33, .33 / 16))
+        self.player_health_bar = BarIndicator(2, pixel_height, 14, 0, numpy.arange(0, .33, .33 / 16))
 
     # Set up opponent health
     def set_up_opponent_health(self, pixel_height):
         #global BarIndicator
-
-        self.opponent_health_bar = BarIndicator(2, 16, 14, 0, numpy.arange(.93, .60, -.33 / 16))
+        #self.opponent_health_bar = BarIndicator(2, 16, 14, 0, numpy.arange(.93, .60, -.33 / 16))
+        self.opponent_health_bar = BarIndicator(2, pixel_height, 0, 0, numpy.arange(.93, .60, -.33 / 16))
 
     # Set the player's health in percentage.
     def set_player_health(self, percentage):

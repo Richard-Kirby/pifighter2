@@ -170,7 +170,13 @@ class Application(tk.Frame, threading.Thread):
 
                 elif server_element.tag == 'OpponentReady':
                     print("** Opponent Ready", server_element.text)
-                    self.session.pix_display.text_message("Go!")
+                    for i in range (5,-1, -1):
+                        count = "...{}...".format(i)
+                        self.session.pix_display.text_message(count)
+                        time.sleep(0.25)
+
+                    self.session.pix_display.text_message("Fight!")
+
                     self.session.fight.start_fight()
 
             if not self.udp_rec_q.empty():

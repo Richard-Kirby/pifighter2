@@ -1,0 +1,10 @@
+<FightLog><Time>1554320155.0399084</Time><LogStr>&lt;SelectedPlayer&gt;Richard Kirby&lt;/SelectedPlayer&gt;</LogStr></FightLog>
+<Fight>
+<FightLog><Time>1554320161.0543985</Time><LogStr>&lt;SelectedOpponent&gt;One Ewok&lt;/SelectedOpponent&gt;</LogStr></FightLog>
+<Fight>
+<FightLog><Time>1554320169.0660343</Time><LogStr>&lt;SelectedOpponent&gt;Yoda&lt;/SelectedOpponent&gt;</LogStr></FightLog>
+<FightLog><Time>1554320222.5180297</Time><LogStr>&lt;Attack&gt;4.264441636934781&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1554320222.5205693</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;-0.9830000000007502&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;195.73555836306522&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1554320222.5222657</Time><LogStr>&lt;OpponentAttack&gt;14.5&lt;/OpponentAttack&gt;</LogStr></FightLog>
+<FightLog><Time>1554320222.525297</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;-15.48300000000075&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;195.73555836306522&lt;/OpponentHealth&gt;&lt;FightOver&gt;True&lt;/FightOver&gt;&lt;FightWinner&gt;Yoda&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1554320229.4705014</Time><LogStr>&lt;OpponentAttack&gt;15.012&lt;/OpponentAttack&gt;</LogStr></FightLog>
