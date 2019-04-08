@@ -54,14 +54,14 @@ class VirtualFighterManager():
     def __init__(self):
         # Build a list of Virtual Fighters - todo should be put into a file.
         self.virtual_fighters = [
-            VirtualFighter("One Ewok", 5, 'One_Ewok_Attack_LevelOne.xml'),
-            VirtualFighter("C3-PO", 60, "C3-PO_Attack_LevelOne.xml"),
-            VirtualFighter("Early Luke SkyWalker", 75, "Early_Luke_Attack_LevelOne.xml"),
-            VirtualFighter("JarJar Binks", 100, "JarJar_Binks_Attack_LevelOne.xml"),
-            VirtualFighter("Many Ewoks", 150, "Many_Ewoks_Attack_LevelOne.xml"),
-            VirtualFighter("Jedi Luke", 200, "Jedi_Luke_Attack_LevelOne.xml"),
-            VirtualFighter("Yoda", 200, "Yoda_LevelOne.xml"),
-            VirtualFighter("Darth Vader", 300, "Darth_Vader_Attack_LevelOne.xml")
+            VirtualFighter("One Ewok", 75, 'One_Ewok_Attack_LevelOne.xml'),
+            VirtualFighter("C3-PO", 110, "C3-PO_Attack_LevelOne.xml"),
+            VirtualFighter("Early Luke SkyWalker", 125, "Early_Luke_Attack_LevelOne.xml"),
+            VirtualFighter("JarJar Binks", 200, "JarJar_Binks_Attack_LevelOne.xml"),
+            VirtualFighter("Many Ewoks", 250, "Many_Ewoks_Attack_LevelOne.xml"),
+            VirtualFighter("Jedi Luke", 300, "Jedi_Luke_Attack_LevelOne.xml"),
+            VirtualFighter("Yoda", 400, "Yoda_LevelOne.xml"),
+            VirtualFighter("Darth Vader", 400, "Darth_Vader_Attack_LevelOne.xml")
         ]
 
 # Class to manager players - users of the site.
