@@ -55,6 +55,9 @@ class FightPlotter():
 
             self.attacks.append((player_attack, opponent_attack))
 
+        # debug
+        print(self.attacks)
+
         # baseline the time to the start of the file
         start_time = self.time_series[0]
 
@@ -76,7 +79,7 @@ class FightPlotter():
         self.ax[0].legend()
 
         self.ax[1].clear()
-        self.ax[1].set_ylim(-1,18)
+        #self.ax[1].set_ylim(-1,18)
         self.ax[1].set_ylabel('Attacks(g)')
         self.ax[1].plot(self.time_series, self.attacks, ' o', 'x')
         self.ax[1].set_xlabel('time')

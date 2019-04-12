@@ -442,8 +442,8 @@ class PlayerSessionManager(threading.Thread):
                                                     'player health': self.player.current_health,
                                                     'opponent name': self.opponent.name,
                                                     'opponent current health': self.opponent.current_health,
-                                                    'opponent attack damage': damage,
-                                                    'player attack damage': None,
+                                                    'opponent attack damage': None,
+                                                    'player attack damage': damage,
                                                     'fight winner': self.fight.winner,
                                                     'fight over': self.fight.fight_over}
 
