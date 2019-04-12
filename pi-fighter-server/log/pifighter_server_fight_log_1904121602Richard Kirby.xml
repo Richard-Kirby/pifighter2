@@ -1,0 +1,21 @@
+<FightLog><Time>1555081329.5946417</Time><LogStr>&lt;SelectedPlayer&gt;Richard Kirby&lt;/SelectedPlayer&gt;</LogStr></FightLog>
+<Fight>
+<FightLog><Time>1555081341.626141</Time><LogStr>&lt;SelectedOpponent&gt;One Ewok&lt;/SelectedOpponent&gt;</LogStr></FightLog>
+<FightLog><Time>1555081366.3918087</Time><LogStr>&lt;Attack&gt;2.227785972279957&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1555081366.3948832</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;411.29999999999933&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;22.772214027720043&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1555081366.3974185</Time><LogStr>&lt;OpponentAttack&gt;2.391&lt;/OpponentAttack&gt;</LogStr></FightLog>
+<FightLog><Time>1555081366.4008615</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;408.9089999999993&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;22.772214027720043&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1555081367.1545777</Time><LogStr>&lt;Attack&gt;4.91270619704632&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1555081367.1567798</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;408.9089999999993&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;17.859507830673724&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1555081367.91103</Time><LogStr>&lt;Attack&gt;4.7610562546645&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1555081367.9135716</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;408.9089999999993&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;13.098451576009225&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1555081368.5675662</Time><LogStr>&lt;OpponentAttack&gt;2.538&lt;/OpponentAttack&gt;</LogStr></FightLog>
+<FightLog><Time>1555081368.5705104</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;406.3709999999993&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;13.098451576009225&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1555081368.5724623</Time><LogStr>&lt;Attack&gt;4.808015839768022&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1555081368.5749187</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;406.3709999999993&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;8.290435736241204&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1555081369.31288</Time><LogStr>&lt;OpponentAttack&gt;2.13&lt;/OpponentAttack&gt;</LogStr></FightLog>
+<FightLog><Time>1555081369.3157995</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;404.2409999999993&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;8.290435736241204&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1555081369.317634</Time><LogStr>&lt;Attack&gt;4.7384061616061155&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1555081369.319923</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;404.2409999999993&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;3.552029574635088&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1555081369.8331146</Time><LogStr>&lt;Attack&gt;4.987848823223424&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1555081369.8359103</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;404.2409999999993&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;-1.435819248588336&lt;/OpponentHealth&gt;&lt;FightOver&gt;True&lt;/FightOver&gt;&lt;FightWinner&gt;Richard Kirby&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>

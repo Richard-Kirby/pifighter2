@@ -54,7 +54,7 @@ class VirtualFighterManager():
     def __init__(self):
         # Build a list of Virtual Fighters - todo should be put into a file.
         self.virtual_fighters = [
-            VirtualFighter("One Ewok", 75, 'One_Ewok_Attack_LevelOne.xml'),
+            VirtualFighter("One Ewok", 25, 'One_Ewok_Attack_LevelOne.xml'),
             VirtualFighter("C3-PO", 110, "C3-PO_Attack_LevelOne.xml"),
             VirtualFighter("Early Luke SkyWalker", 125, "Early_Luke_Attack_LevelOne.xml"),
             VirtualFighter("JarJar Binks", 200, "JarJar_Binks_Attack_LevelOne.xml"),

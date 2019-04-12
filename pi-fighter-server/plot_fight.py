@@ -23,7 +23,8 @@ class FightPlotter():
 
         self.player_health=[]
         self.opponent_health=[]
-        self.attacks = []
+        self.player_attacks = []
+        self.opponent_attacks = []
         self.time_series=[]
         self.player = None
         self.opponent = None
@@ -48,15 +49,15 @@ class FightPlotter():
             else:
                 player_attack = 0.0
 
+            self.player_attacks.append(player_attack)
+
             if fight_info["opponent attack damage"] is not None:
                 opponent_attack = float(fight_info["opponent attack damage"])
             else:
                 opponent_attack = 0.0
 
-            self.attacks.append((player_attack, opponent_attack))
+            self.opponent_attacks.append(opponent_attack)
 
-        # debug
-        print(self.attacks)
 
         # baseline the time to the start of the file
         start_time = self.time_series[0]
@@ -81,7 +82,8 @@ class FightPlotter():
         self.ax[1].clear()
         #self.ax[1].set_ylim(-1,18)
         self.ax[1].set_ylabel('Attacks(g)')
-        self.ax[1].plot(self.time_series, self.attacks, ' o', 'x')
+        self.ax[1].plot(self.time_series, self.player_attacks, 'X')
+        self.ax[1].plot(self.time_series, self.opponent_attacks, 'o')
         self.ax[1].set_xlabel('time')
         plt.pause(0.0001)
         #plt.show(block=False)

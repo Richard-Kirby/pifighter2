@@ -5,69 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b98157e7-a11b-45ba-8dd5-f32487bf34f4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_19_03_31_12:35Richard Kirby_v_Early Luke SkyWalker.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_19_03_31_12:31Richard Kirby_v_C3-PO.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-users.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-users.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/plot_fight.py" afterPath="$PROJECT_DIR$/pi-fighter-server/plot_fight.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Yoda_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Yoda_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/attack_only_stub.py" afterPath="$PROJECT_DIR$/pi-fighter-server/attack_only_stub.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Early_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Early_Luke_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/pixel_display.py" afterPath="$PROJECT_DIR$/pixel_display/pixel_display.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/create_DejaVuDisplay.sh" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/create_DejaVuDisplay.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/README.md" afterPath="$PROJECT_DIR$/pi-fighter-server/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tester.py" afterPath="$PROJECT_DIR$/tester.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pifighter2.iml" afterPath="$PROJECT_DIR$/.idea/pifighter2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Jedi_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Jedi_Luke_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/JarJar_Binks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/JarJar_Binks_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter.cfg" afterPath="$PROJECT_DIR$/pi-fighter.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Early_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Early_Luke_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/One_Ewok_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/One_Ewok_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py" afterPath="$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py" afterPath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" afterPath="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/__init__.py" afterPath="$PROJECT_DIR$/server_communicator/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_19_03_31_12:35Richard Kirby_v_Early Luke SkyWalker.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/luke.jpg" afterPath="$PROJECT_DIR$/luke.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats.py" afterPath="$PROJECT_DIR$/stats.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pifighter2.iml" afterPath="$PROJECT_DIR$/.idea/pifighter2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accel/__init__.py" afterPath="$PROJECT_DIR$/accel/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accel/accel.py" afterPath="$PROJECT_DIR$/accel/accel.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event.py" afterPath="$PROJECT_DIR$/event.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/JarJar_Binks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/JarJar_Binks_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/doc/users/generate_credits.py" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/doc/users/generate_credits.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/text_handler.py" afterPath="$PROJECT_DIR$/pixel_display/text_handler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/C3-PO_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/C3-PO_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/.circleci/deploy-docs.sh" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/.circleci/deploy-docs.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/github_stats.py" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/github_stats.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tests.py" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/make_icons.py" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/make_icons.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accel/__init__.py" afterPath="$PROJECT_DIR$/accel/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/udp_server.py" afterPath="$PROJECT_DIR$/server_communicator/udp_server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Darth_Vader_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Darth_Vader_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Many_Ewoks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Many_Ewoks_Attack_LevelOne.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gui/__init__.py" afterPath="$PROJECT_DIR$/gui/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Darth_Vader_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Darth_Vader_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/ci/silence" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/ci/silence" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Yoda_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Yoda_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.cfg" afterPath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/bar_indicator.py" afterPath="$PROJECT_DIR$/pixel_display/bar_indicator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/__init__.py" afterPath="$PROJECT_DIR$/pixel_display/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_19_03_31__1316_Richard Kirby_v_One Ewok.json" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_19_03_31__1316_Richard Kirby_v_One Ewok.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/One_Ewok_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/One_Ewok_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pifighter2.cfg" afterPath="$PROJECT_DIR$/pifighter2.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/README.md" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/memleak.py" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/memleak.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Many_Ewoks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Many_Ewoks_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/session_manager.py" afterPath="$PROJECT_DIR$/session_manager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/C3-PO_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/C3-PO_Attack_LevelOne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Jedi_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Jedi_Luke_Attack_LevelOne.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gui/gui.py" afterPath="$PROJECT_DIR$/gui/gui.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/C3-PO_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/C3-PO_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Darth_Vader_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Darth_Vader_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Early_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Early_Luke_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/JarJar_Binks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/JarJar_Binks_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Jedi_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Jedi_Luke_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Many_Ewoks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Many_Ewoks_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/One_Ewok_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/One_Ewok_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/README.md" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Yoda_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/AttackFiles/Yoda_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/C3-PO_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/C3-PO_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Darth_Vader_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Darth_Vader_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Early_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Early_Luke_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/JarJar_Binks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/JarJar_Binks_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Jedi_Luke_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Jedi_Luke_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Many_Ewoks_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Many_Ewoks_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/One_Ewok_Attack_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/One_Ewok_Attack_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/README.md" afterPath="$PROJECT_DIR$/pi-fighter-server/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/Yoda_LevelOne.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/Yoda_LevelOne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/attack_only_stub.py" afterPath="$PROJECT_DIR$/pi-fighter-server/attack_only_stub.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" afterPath="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_19_03_31__1316_Richard Kirby_v_One Ewok.json" afterPath="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_19_03_31__1316_Richard Kirby_v_One Ewok.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/.circleci/deploy-docs.sh" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/.circleci/deploy-docs.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/ci/silence" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/ci/silence" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/doc/users/generate_credits.py" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/doc/users/generate_credits.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tests.py" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/create_DejaVuDisplay.sh" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/create_DejaVuDisplay.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/github_stats.py" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/github_stats.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/make_icons.py" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/make_icons.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/memleak.py" afterPath="$PROJECT_DIR$/pi-fighter-server/matplotlib/tools/memleak.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.cfg" afterPath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py" afterPath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-users.xml" afterPath="$PROJECT_DIR$/pi-fighter-server/pi-fighter-users.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py" afterPath="$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter-server/plot_fight.py" afterPath="$PROJECT_DIR$/pi-fighter-server/plot_fight.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pi-fighter.cfg" afterPath="$PROJECT_DIR$/pi-fighter.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pifighter2.cfg" afterPath="$PROJECT_DIR$/pifighter2.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/__init__.py" afterPath="$PROJECT_DIR$/pixel_display/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/bar_indicator.py" afterPath="$PROJECT_DIR$/pixel_display/bar_indicator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/pixel_display.py" afterPath="$PROJECT_DIR$/pixel_display/pixel_display.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pixel_display/text_handler.py" afterPath="$PROJECT_DIR$/pixel_display/text_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/__init__.py" afterPath="$PROJECT_DIR$/server_communicator/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/server_communicator.py" afterPath="$PROJECT_DIR$/server_communicator/server_communicator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/udp_client.py" afterPath="$PROJECT_DIR$/server_communicator/udp_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_communicator/udp_server.py" afterPath="$PROJECT_DIR$/server_communicator/udp_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/session_manager.py" afterPath="$PROJECT_DIR$/session_manager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats.py" afterPath="$PROJECT_DIR$/stats.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tester.py" afterPath="$PROJECT_DIR$/tester.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,8 +91,8 @@
       <file leaf-file-name="plot_fight.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pi-fighter-server/plot_fight.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="83" column="3" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
+            <state relative-caret-position="445">
+              <caret line="84" column="65" lean-forward="false" selection-start-line="84" selection-start-column="65" selection-end-line="84" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -101,8 +101,8 @@
       <file leaf-file-name="fighter_manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pi-fighter-server/fighter_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="63" column="61" lean-forward="true" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
+            <state relative-caret-position="836">
+              <caret line="56" column="41" lean-forward="false" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -182,13 +182,13 @@
         <option value="$PROJECT_DIR$/server_communicator/server_communicator.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/log/pifighter_server_fight_log_1807271813Richard Kirby.xml" />
         <option value="$PROJECT_DIR$/accel/accel.py" />
-        <option value="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" />
         <option value="$PROJECT_DIR$/session_manager.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py" />
         <option value="$PROJECT_DIR$/pixel_display/text_handler.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/pixel_display/pixel_display.py" />
         <option value="$PROJECT_DIR$/pixel_display/bar_indicator.py" />
+        <option value="$PROJECT_DIR$/pi-fighter-server/fighter_manager.py" />
         <option value="$PROJECT_DIR$/pi-fighter-server/plot_fight.py" />
       </list>
     </option>
@@ -588,14 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pi-fighter-server/fighter_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="63" column="61" lean-forward="true" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pi-fighter-server/pifighter_server2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -604,10 +596,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pi-fighter-server/fighter_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="56" column="41" lean-forward="false" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pi-fighter-server/plot_fight.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="83" column="3" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
+        <state relative-caret-position="445">
+          <caret line="84" column="65" lean-forward="false" selection-start-line="84" selection-start-column="65" selection-end-line="84" selection-end-column="65" />
           <folding />
         </state>
       </provider>
