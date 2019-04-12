@@ -70,7 +70,7 @@ class FightPlotter():
         # Prepare the data.
         self.prep_data()
 
-        plt.ion()
+        #plt.ion()
 
         self.ax[0].clear()
         self.ax[0].plot(self.time_series, self.player_health, label=self.player)
@@ -80,22 +80,22 @@ class FightPlotter():
         self.ax[0].legend()
 
         self.ax[1].clear()
-        #self.ax[1].set_ylim(-1,18)
+        self.ax[1].set_ylim(-1,18)
         self.ax[1].set_ylabel('Attacks(g)')
         self.ax[1].plot(self.time_series, self.player_attacks, 'X')
         self.ax[1].plot(self.time_series, self.opponent_attacks, 'o')
         self.ax[1].set_xlabel('time')
-        plt.pause(0.0001)
-        #plt.show(block=False)
+        #plt.pause(0.0001)
+        plt.show()
         #time.sleep(10)
         #   plt.close(self.fig)
 
 if __name__ == "__main__":
 
-    fight_plotter = FightPlotter("log/pifighter_server_1807281111Richard Kirby_v_One Ewok.json")
+    fight_plotter = FightPlotter("log/pifighter_server_19_04_12__1650_Richard Kirby_v_One Ewok.json")
 
     fight_plotter.prep_data()
 
-    fight_plotter.plot_fight()
+    fight_plotter.plot_fight_data()
 
 
