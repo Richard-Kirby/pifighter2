@@ -1,1 +1,7 @@
-<Users><User Name="Richard Kirby"><Health>434.69999999999925</Health></User><User Name="Joh Kirby"><Health>130.2</Health></User></Users>
+<Users>
+    <User Name="Testing or Demo 1"><Health>489.899999999999</Health></User>
+    <User Name="Joh Kirby"><Health>100</Health></User>
+    <User Name="Richard Kirby"><Health>102.2</Health></User>
+    <User Name="Tai Kirby"><Health>100</Health></User>
+    <User Name="Nae Miyazaki"><Health>100</Health></User>
+</Users>

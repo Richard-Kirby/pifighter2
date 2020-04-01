@@ -1,0 +1,22 @@
+<FightLog><Time>1585739459.5233245</Time><LogStr>&lt;SelectedPlayer&gt;Testing or Demo 1&lt;/SelectedPlayer&gt;</LogStr></FightLog>
+<Fight>
+<FightLog><Time>1585739471.5536494</Time><LogStr>&lt;SelectedOpponent&gt;Tester - too wimpy&lt;/SelectedOpponent&gt;</LogStr></FightLog>
+<FightLog><Time>1585739486.3044605</Time><LogStr>&lt;Attack&gt;2.4783849899699404&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1585739486.3068287</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;488.6999999999991&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;17.52161501003006&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585739486.3090196</Time><LogStr>&lt;OpponentAttack&gt;2.391&lt;/OpponentAttack&gt;</LogStr></FightLog>
+<FightLog><Time>1585739486.311665</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;486.30899999999906&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;17.52161501003006&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585739486.8162785</Time><LogStr>&lt;Attack&gt;3.296142641416029&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1585739486.8191457</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;486.30899999999906&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;14.225472368614032&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585739487.574618</Time><LogStr>&lt;Attack&gt;3.3848162700652438&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1585739487.5777185</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;486.30899999999906&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;10.840656098548788&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585739488.334434</Time><LogStr>&lt;Attack&gt;4.29289805082466&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1585739488.3370354</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;486.30899999999906&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;6.547758047724128&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585739488.4772384</Time><LogStr>&lt;OpponentAttack&gt;2.538&lt;/OpponentAttack&gt;</LogStr></FightLog>
+<FightLog><Time>1585739488.4802217</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;483.77099999999905&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;6.547758047724128&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585739488.9853778</Time><LogStr>&lt;Attack&gt;3.965803298970062&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1585739488.987763</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;483.77099999999905&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;2.581954748754066&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585739489.2241504</Time><LogStr>&lt;OpponentAttack&gt;2.13&lt;/OpponentAttack&gt;</LogStr></FightLog>
+<FightLog><Time>1585739489.227057</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;481.64099999999905&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;2.581954748754066&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585739489.7296886</Time><LogStr>&lt;Attack&gt;3.6301896994653893&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1585739489.7320247</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;481.64099999999905&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;-1.0482349507113233&lt;/OpponentHealth&gt;&lt;FightOver&gt;True&lt;/FightOver&gt;&lt;FightWinner&gt;Testing or Demo 1&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585739498.9673865</Time><LogStr>&lt;OpponentAttack&gt;2.097&lt;/OpponentAttack&gt;</LogStr></FightLog>

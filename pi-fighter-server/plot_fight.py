@@ -12,6 +12,7 @@ from matplotlib import style
 
 style.use('fivethirtyeight')
 
+
 class FightPlotter():
 
     def __init__(self, filename):

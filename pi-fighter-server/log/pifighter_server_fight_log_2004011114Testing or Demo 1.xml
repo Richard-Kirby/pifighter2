@@ -1,0 +1,18 @@
+<FightLog><Time>1585736055.7142696</Time><LogStr>&lt;SelectedPlayer&gt;Testing or Demo 1&lt;/SelectedPlayer&gt;</LogStr></FightLog>
+<Fight>
+<FightLog><Time>1585736069.7384713</Time><LogStr>&lt;SelectedOpponent&gt;One Ewok&lt;/SelectedOpponent&gt;</LogStr></FightLog>
+<FightLog><Time>1585736084.251547</Time><LogStr>&lt;Attack&gt;4.913653964722606&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1585736084.253873</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;487.6999999999991&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;20.086346035277394&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585736084.2554555</Time><LogStr>&lt;OpponentAttack&gt;2.391&lt;/OpponentAttack&gt;</LogStr></FightLog>
+<FightLog><Time>1585736084.2581499</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;485.30899999999906&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;20.086346035277394&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585736085.0110548</Time><LogStr>&lt;Attack&gt;5.874297688488157&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1585736085.0132246</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;485.30899999999906&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;14.212048346789238&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585736085.5188694</Time><LogStr>&lt;Attack&gt;5.656879748278261&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1585736085.5216005</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;485.30899999999906&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;8.555168598510978&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585736086.276394</Time><LogStr>&lt;Attack&gt;6.344233470965716&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1585736086.2787097</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;485.30899999999906&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;2.2109351275452616&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585736086.4240057</Time><LogStr>&lt;OpponentAttack&gt;2.538&lt;/OpponentAttack&gt;</LogStr></FightLog>
+<FightLog><Time>1585736086.4268966</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;482.77099999999905&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;2.2109351275452616&lt;/OpponentHealth&gt;&lt;FightOver&gt;False&lt;/FightOver&gt;&lt;FightWinner&gt;None&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585736086.938187</Time><LogStr>&lt;Attack&gt;3.036641075607094&lt;/Attack&gt;</LogStr></FightLog>
+<FightLog><Time>1585736086.9407516</Time><LogStr>&lt;FightState&gt;&lt;PlayerHealth&gt;482.77099999999905&lt;/PlayerHealth&gt;&lt;OpponentHealth&gt;-0.8257059480618323&lt;/OpponentHealth&gt;&lt;FightOver&gt;True&lt;/FightOver&gt;&lt;FightWinner&gt;Testing or Demo 1&lt;/FightWinner&gt;&lt;/FightState&gt;</LogStr></FightLog>
+<FightLog><Time>1585736099.643746</Time><LogStr>&lt;OpponentAttack&gt;2.13&lt;/OpponentAttack&gt;</LogStr></FightLog>

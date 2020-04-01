@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 
 # Fighter class - base class for opponents and players.
-class fighter():
+class Fighter():
     def __init__(self, name, health):
         self.name = name
         self.health = float(health)
@@ -23,7 +23,7 @@ class fighter():
         self.current_health = self.initial_health
 
 # Class to handle the Virtual Fighters.
-class VirtualFighter(fighter):
+class VirtualFighter(Fighter):
 
     # Virtual fighter init
     def __init__(self, name, health, attack_filename):
@@ -31,7 +31,7 @@ class VirtualFighter(fighter):
         self.attack_file = attack_filename
 
 # Player Class - manages player information.  It is just a type of fighter, but gets re-gen and extra health when wins a fight.
-class Player(fighter):
+class Player(Fighter):
     def __init__(self, name, health):
         super().__init__(name, health)
 
@@ -50,11 +50,12 @@ class Player(fighter):
                 .format(self.name, self.health, self.name, self.initial_health, self.current_health))
 
 # Manager for the Virtual Fighters todo Need to change to file based storage like players.
-class VirtualFighterManager():
+class VirtualFighterManager:
     def __init__(self):
         # Build a list of Virtual Fighters - todo should be put into a file.
         self.virtual_fighters = [
-            VirtualFighter("One Ewok", 25, 'One_Ewok_Attack_LevelOne.xml'),
+            VirtualFighter("Tester - too wimpy", 20, 'One_Ewok_Attack_LevelOne.xml'),
+            VirtualFighter("One Ewok", 50, 'One_Ewok_Attack_LevelOne.xml'),
             VirtualFighter("C3-PO", 110, "C3-PO_Attack_LevelOne.xml"),
             VirtualFighter("Early Luke SkyWalker", 125, "Early_Luke_Attack_LevelOne.xml"),
             VirtualFighter("JarJar Binks", 200, "JarJar_Binks_Attack_LevelOne.xml"),

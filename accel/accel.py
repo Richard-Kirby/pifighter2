@@ -100,7 +100,7 @@ class Accelerometer(threading.Thread):
                     # Send to acceleration queue
                     self.accel_queue.put_nowait(self.max_accel)
 
-                    print("#####",  self.accel_queue.qsize())
+                    #print("#####",  self.accel_queue.qsize())
 
                     # Clear out the deque, so we don't report again too soon.
                     self.recent_reads.clear()

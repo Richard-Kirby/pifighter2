@@ -38,7 +38,7 @@ class BarIndicator:
 
         bar_pixels = bar_percent/100 * (self.y_size -1)
 
-        print("@@ {}".format(bar_pixels))
+        #print("@@ {}".format(bar_pixels))
 
         # Figure out the colour to display based on the percentage
         state_colour = self.colour_list[int(bar_percent / 100 * 15)] # 15 is the maximum colours in the colour list

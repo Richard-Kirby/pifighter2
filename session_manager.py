@@ -156,11 +156,11 @@ class Session(Event, threading.Thread):
             if not self.player_attack_q.empty():
                 accel_str =  self.player_attack_q.get_nowait()
                 accel_perc = float(accel_str)/16.0 * 100
-                print("&&&", int(accel_perc))
+                #print("&&&", int(accel_perc))
 
                 attack_str = "<Attack>{}</Attack>" .format(accel_str)
 
-                print(attack_str)
+                #print(attack_str)
 
                 self.udp_send_q.put_nowait(attack_str)
 
@@ -176,7 +176,7 @@ class Session(Event, threading.Thread):
             # Deal with Opponent's attack Queue
             if not self.opponent_attack_q.empty():
                 accel_perc = float(self.opponent_attack_q.get_nowait())/16.0 * 100
-                print("&&&", int(accel_perc))
+                #print("&&&", int(accel_perc))
                 if accel_perc >100:
                     accel_perc = 100
 
